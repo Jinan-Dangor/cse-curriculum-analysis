@@ -1,6 +1,6 @@
 // const url = 'http://127.0.0.1:5000';
-// const url = 'http://localhost/api';
-const url = 'http://hri.cse.unsw.edu.au/api';
+const url = 'http://localhost/api';
+//const url = 'http://hri.cse.unsw.edu.au/api';
 
 export function getGraphData() {
     return fetch(url + '/graph').then(
