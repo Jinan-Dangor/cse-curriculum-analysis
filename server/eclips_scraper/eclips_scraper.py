@@ -97,7 +97,7 @@ for course_link in course_links:
     term_offerings = course_link.find_elements_by_class_name("css-1bm06br-Link")
     for t in term_offerings:
         term = t.find_element_by_class_name("css-x2h87q-Text").text
-        if term[0:4] == "2021":
+        if term[0:4] == "2020":
             course_hyperlink = t.get_attribute("href")
             break
     if course_hyperlink == "":
