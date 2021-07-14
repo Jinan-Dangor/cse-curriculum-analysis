@@ -2,6 +2,18 @@
 const url = 'http://localhost/api';
 //const url = 'http://hri.cse.unsw.edu.au/api';
 
+export function execute_scraper() {
+    console.log("Scraper executing")
+    return fetch(url + '/admin/execute_eclips_scraper', {
+        method: 'POST'
+    }).then(
+        resp => {
+            console.log("Executed")
+            return resp.json();
+        }
+    )
+}
+
 export function getGraphData() {
     return fetch(url + '/graph').then(
         resp => {

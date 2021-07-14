@@ -1,0 +1,1495 @@
+{
+    "COMP2521": {
+        "offering_time": "T0",
+        "name": "Data Structures and Algorithms",
+        "url": "https://cgi.cse.unsw.edu.au/~cs2521/19T3/admin/outline/index.php",
+        "outline": "The goal of this course is\nto deepen your understanding of data structures and algorithms\nand how these can be employed effectively\nin the design of software systems.\nIt is an important course in covering\na range of core data structures and algorithms\nthat will be used in context in later courses.\nYou explore these ideas in lectres, tutorials, lab classes, and assignments.\nAssessment involves labs, tutes, practical lab exams, a practical final exam, and a theory exam.\nAt the end of the course, we want you to be a solid programmer, with knowledge of a range of useful\ndata structures and programming techniques, capable of building significant\nsoftware systems in a team environment, and ready to continue with further specialised studies in computing.Topics:\nAn introduction the structure, analysis and usage\nof a range of fundamental data types and\nthe core algorithms that operate on them, including:\nalgorithm analysis, sorting, searching, trees,\ngraphs, files, algorithmic strategies,\nanalysis and measurement of programs.\nLabs and programming assignments in C,\nusing a range of Unix tools.Executive SummaryA summary of the critical things to know about COMP2521:attempt all of the labs, tutorials, and assignments yourselfalways try to produce a better program than last timein lectures, think critically about what's being said/shownthe textbook is a useful reference source beyond this courseassessment: labs: 8%, assignments: 22%, midterm exam: 10%, final exam: 60%enjoy the course!Now, please read the rest of this document.Course TimetableThe complete course timetable is available at:webcms3:/timetableCourse AimsThe aim of this course is\nto get you tothink like a computer scientist.\nThis certainly sounds like a noble goal...\nbut what does it really mean?\nHow does ascientist,\nlet alone a computer scientist,\nactually think?What many types of scientists try to do\nis understand natural systems and processes:\na geologist, for example,\ntries to understand the structure of the earth;\na biologist tries to understand living organisms;\na chemist tries to understand materials and reactions,\nand so on.Computer scientists don't,\nas the name might suggest,\nsimply try to understand\nthe structure and behaviour of computers,\nbut are more concerned with\nunderstanding software systems\n(and the interaction between\nthe software and the hardware on which it runs).\nAlso, unlike other scientists,\ncomputer scientists frequently build\nthe objects that they study.During this course, we'll be looking at\nways of creating, analysing and understanding software.\nUltimately, you should be able to answer the question,is this piece of software any good?and be able to provide sound reasons to justify your answer.This course follows on from introductory C programming courses:\nCOMP1511, COMP1917, or COMP1921.\nWe cover additional aspects of the C programming language\nthat were not covered in those courses,\nand also look at some programming tools\nwhich were not covered (in detail) earlier.\nHowever, this course is not simply\na second C programming course:\nthe focus is on the ideas and abstractions\nbehind the data structures and algorithms that are used.COMP2521 is a critical course\nin the study of computing at UNSW,\nsince it deals with many concepts that are\ncentral to future studies in the area.\nWhether you are studying Computer Science,\nSoftware Engineering, Bioinformatics,\nComputer Engineering,\nor even a discipline outside the realm of computing,\nunderstanding a range of algorithms and data structures\nand how to use them\nwill make you a much more effective\ncomputing problem solver in the future.Student Learning Outcomes",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP1511 or DPST1091 or COMP1917 or COMP1921",
+        "prereqs": {
+            "COMP1511": ""
+        }
+    },
+    "COMP3331": {
+        "offering_time": "T0",
+        "name": "Computer Networks&Applications (U1B)",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3331/19T3/outline",
+        "outline": "This course is an introductory course on computer networks, aimed at students with a background in computer science / electrical engineering. We will focus on common paradigms and protocols used in present data communication. Through lectures, in-class activities, labs and assignments, you will learn the theory and application of(1) medium access control, congestion control, flow control, and reliable transmission,(2) addressing and naming,(3) routing and switching,(4) widely used protocols such as Ethernet, IP, TCP, UDP, HTTP, etc.(5) security threats and common defensive techniques, and(6) special purpose networks such as content delivery networks, peer-to-peer networks and wireless networks.This is a combined undergraduate and postgraduate course.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP1927 or COMP2521 or MTRN3500",
+        "prereqs": {
+            "COMP2521": ""
+        }
+    },
+    "COMP3411": {
+        "offering_time": "T0",
+        "name": "Artificial Intelligence (U1B)",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3411/19T1/outline",
+        "outline": "Give a brief summary for why this course is relevant, where it fits in the \n  degree(s), and its aims ...",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP2521 or COMP1927",
+        "prereqs": {
+            "COMP2521": ""
+        }
+    },
+    "COMP3511": {
+        "offering_time": "T0",
+        "name": "Human Computer Interaction (U1B)",
+        "url": "https://www.cse.unsw.edu.au/~cs3511/HCICourseOutline2019-V1.pdf",
+        "outline": "Lecture topics are summarised in the Course Schedule below.\n\u2022 The course includes topics relating to Requirements, Design, Prototyping and Evaluation within the\nUser Centred Design process.\n\u2022 You will also be given the skills to conduct a basic Usability Evaluation.\n\u2022 Other topics covered within the course allow you to understand your users and their needs. This\nincludes an overview of basic Cognitive capacities, Designing for Accessibility, Internationalisation,\nlevels of Expertise, and Collaboration.\n\u2022 You will also be looking at the differences between Scientific Data Gathering and User Studies, with\na consideration for Human Ethics.\n\u2022 Other topics include Visual Design principles and looking at different Input/Output devices and their\npotential impact on Design.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "Completion of 48 UOC",
+        "prereqs": {}
+    },
+    "COMP3901": {
+        "offering_time": "T0",
+        "name": "Special Project A",
+        "url": "http://www.cse.unsw.edu.au/~morri/specialProject.html",
+        "outline": "This course aims to develop skills in conducting a research project.\nUnder special circumstances, students can request to conduct a\nresearch project supervised by academic staff.\nThis page covers special projects under the supervision of\nMaurice Pagnucco (morri [AT] cse.unsw.edu.au).\nThese projects will primarily involve robotics projects,\nprimarily as part of theCSE RoboCup team.The UNSW Handbook Entries provide some additional information:COMP3901: Special Project ACOMP3902: Special Project BThere is alsosome information here.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "80+ WAM in COMP, SENG or BINF courses, completion of all first and second year core requirements a CSE program, and agreement from a suitable CSE academic supervisor.",
+        "prereqs": {}
+    },
+    "COMP6448": {
+        "offering_time": "T0",
+        "name": "Security Masterclass (U1B)",
+        "url": "",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP6841",
+        "prereqs": {
+            "COMP6841": ""
+        }
+    },
+    "COMP6451": {
+        "offering_time": "T0",
+        "name": "Cryptocurrency and DLT",
+        "url": "http://www.cse.unsw.edu.au/~cs6451/",
+        "outline": "The course aims to develop an understanding of the requirements for\nelectronic payment systems and how these requirements are realised\nusing distributed ledger technologies. The technical ideas to be\nunderstood include the key cryptographic constructs, economic\nincentive mechanisms and distributed algorithms underpinning\ncryptocurrencies such as Bitcoin and Ethereum. The concept of smart\ncontract will be introduced, and the course aims to develop a basic\nfacility with programming smart contracts on one cryptocurrency\nplatform. The course also aims to introduce students to the broader\ncontext of the range of alternate designs for distributed ledger\ntechnologies, the range of potential applications for these\ntechnologies, and the socio-economic, ethical and legal dimensions of\ntheir use.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP2521 OR COMP9024",
+        "prereqs": [
+            "OR",
+            {
+                "COMP9024": ""
+            },
+            {
+                "COMP2521": ""
+            }
+        ]
+    },
+    "COMP9024": {
+        "offering_time": "T0",
+        "name": "Data Structures & Algorithms",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9024/19T3/outline",
+        "outline": "Data structures are about how data is stored inside a computer for effective and efficient use. An algorithm is a step-by-step process for solving a problem within a finite amount of space and time. Data structures and algorithms are not only important in software design, but also in hardware design. Being proficient in data structures and algorithms are essential for good software developers, hardware developers, and system architects.The actual content is taken from a list of subjects that constitute the basis of the tool box of every serious practitioner of computing: data types and data structures, abstract data types, dynamic data structures, analysis of algorithms and a variety of fundamental algorithms for graphs, trees and text processing.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "",
+        "prereqs": []
+    },
+    "COMP9331": {
+        "offering_time": "T0",
+        "name": "Computer Networks&Applications (U1B)",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3331/19T2/outline",
+        "outline": "This course is an introductory course on computer networks, aimed at students with a background in computer science / electrical engineering. We will focus on common paradigms and protocols used in present data communication. Through lectures, in-class activities, labs and assignments, you will learn the theory and application of(1) medium access control, congestion control, flow control, and reliable transmission,(2) addressing and naming,(3) routing and switching,(4) widely used protocols such as Ethernet, IP, TCP, UDP, HTTP, etc.(5) security threats and common defensive techniques, and(6) special purpose networks such as content delivery networks, peer-to-peer networks and wireless networks.This is a combined undergraduate and postgraduate course.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024.",
+        "prereqs": [
+            "WITH",
+            {
+                "COMP9024": ""
+            }
+        ]
+    },
+    "COMP9414": {
+        "offering_time": "T0",
+        "name": "Artificial Intelligence (U1B)",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9414/19T1/outline",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9021",
+        "prereqs": {
+            "COMP9021": ""
+        }
+    },
+    "COMP9511": {
+        "offering_time": "T0",
+        "name": "Human Computer Interaction (U1B)",
+        "url": "https://www.cse.unsw.edu.au/~cs3511/HCICourseOutline2019-V1.pdf",
+        "outline": "Lecture topics are summarised in the Course Schedule below.\n\u2022 The course includes topics relating to Requirements, Design, Prototyping and Evaluation within the\nUser Centred Design process.\n\u2022 You will also be given the skills to conduct a basic Usability Evaluation.\n\u2022 Other topics covered within the course allow you to understand your users and their needs. This\nincludes an overview of basic Cognitive capacities, Designing for Accessibility, Internationalisation,\nlevels of Expertise, and Collaboration.\n\u2022 You will also be looking at the differences between Scientific Data Gathering and User Studies, with\na consideration for Human Ethics.\n\u2022 Other topics include Visual Design principles and looking at different Input/Output devices and their\npotential impact on Design.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "",
+        "prereqs": []
+    },
+    "COMP1511": {
+        "offering_time": "T1",
+        "name": "Programming Fundamentals",
+        "url": "https://www.cse.unsw.edu.au/~cs1511/19T3/resources/outline.html",
+        "outline": "This course introduces students to the basics of programming.\nTopics covered include:fundamental programming conceptsthe C programming language and use of a C compilerprogramming styleprogram design and organisation conceptsprogram testing and debuggingCourse AimsThe course aims for students to become proficient in programming using a high\nlevel language, C.\n\nBy the end of the course, students should be able to\nconstruct C programs to solve problems.Course Learning Outcomesunderstand the core syntax and semantics of the C programming language including\ntypes, I/O, arrays, functions, pointers, structs and dynamic memory allocationgiven a problem, solve it by proficiently constructing (designing, testing,\ndebugging) a secure, reliable and correct C programunderstand and employ fundamental data structures including arrays and\nlinked listsuse Linux and Unix-like operating systems to develop and test softwareCOMP1511 versus COMP1911COMP1511 is designed for computer science majors, and for any student\nwith a keen interest in computing, regardless of their degree program.COMP1911 is for students who are not computer science majors.\nCOMP1911 covers a subset of the material in COMP1511 and moves at a more\ngentle pace.If you are a computer science major, you must take COMP1511If you are not a computer science major, but have an interest in computer\nscience and think you may take further COMP courses, you also should enrol in\nCOMP1511And if you have previous programming experience -and enjoyed it- choose COMP1511Course ScheduleWeek 1Course Introduction, Compiling and Running C Programs,\n    Variables, Simple input and output, If statementsWeek 2Continuing If statements,\n    Boolean Expressions,\n\tLoops,\n\tProblem SolvingWeek 3Loops,\n\tNested Loops,\n\tMemory and Arrays,\n\tCode ReviewsWeek 4More Arrays,\n    Characters and Strings,\n    FunctionsWeek 5Pointers and Memory,\n    DebuggingWeek 6Structs and Pointers,\n    ProfessionalismAssignment 1dueWeek 7Multi-file projects,\n    Memory Allocation,\n    Linked ListsWeek 8Linked ListsWeek 9Abstract data types & Interfaces,\n\tStacks and Queues,Week 10Revision,\n    Exam preparationAssignment 2dueExam PeriodFinal ExamTopics including development approaches, programming style, testing, debugging\nstrategies and ethics will be discussed though the course as they arise.Teaching RationaleThis course has a heavy practical orientation.  Lectures will revolve\naround live demonstrations of programming and use of tools.\nLabs and assignments form a key part.On top of this, the course is not just about the specific technical\naspects of Programming, but also a preparation for studying Computer Science\nand the thought processes and skills necessary for a career in the field.Teaching StrategiesLecturesLectures will be used to present the theory and\npractice of the techniques and tools in this course. There will be\nextensive use of  practical demonstrations during\nlectures. Lecture notes will be available on the course web pages\nbefore each lecture.TutorialsFrom week 1 you will also be expected to attend a one-hour tutorial\nsession to clarify ideas from lectures and work through exercises\nbased on the lecture material. You should make sure that you use them\neffectively by examining in advance the material to be covered in each\nweek's tutorial, by asking questions, by offering suggestions and by generally\nparticipating. The tutorial questions will be posted on the Web in the\nweek before each tutorial.  There are no marks for tutorial attendance.Laboratory ClassesFollowing the tutorial class each week, there will be a two-hour laboratory class,\nduring which you will work on a variety of small practical problems\ninvolving the tools introduced in lectures.\nBecause this course is practical in nature, laboratory classes are a very\nimportant component. If you do not put a great deal of effort into the lab classes\nyou risk failing the final exam.Each week, there will be several exercises to work on. These exercises will be\nreleased in the week preceding the lab class.Most lab exercises will be done in\npairs, and you and you partner should discuss the exercises before the lab to\nmaximise the usefulness of the class.Tutors  will facilitate you forming pairs in your week 1 lab (which is not\nassessed). The pairs will change twice during session.Starting week 3, pairs will also be asked to do code reviews in the tutorials,\nto explain how they tackled a particular problem and describe interesting\nfeatures of their solution.OverviewLab exercises will be automarked (marked automatically by a computer),\nso that tutors can spend lab time assisting students rather than marking\nlabs.SubmissionFor each of the lab exercises,bothmembers of each lab pair need\nto submit the exerciseseparatelyusinggive.You cannot obtain marks by e-mailing lab work to tutors or lecturers.If you cannot complete the exercise by the end of the lab\nyou may complete it in your own time and submit it using thegivecommandbefore 5pm Monday(Monday 17:00).Challenge ExercisesChallenge exercises may be specified for some labs.Some challenge lab exercises typically will specify that they are individual\nexercises (not to be done with your partner).Challenge exercises may be silly, confusing or unreasonably difficult.Do not worry if you can not complete challenge exercises.Lab MarkingLab exercises will be automarked, using test cases that you haven't seen:\ndifferent to the test casesautotestruns for\nyou.\n\n(Hint: do your own testing as well as runningautotest)There will be partial marks for attempts which fail some of these\nautomated tests.AutomarkingAutomarking will be run several days after the submission deadline\nfor the lab. When it  is complete you should be able toview it hereor by running this command on a CSE machine:1511 classrun -collect exercise_nameLab MarksWhen all components of a lab  are automarked you should be able to view the\nthe marksvia give's web interfaceor by running this command on a CSE machine:1511 classrun -sturecThere will be more lab marks available than necessary\nto obtain full marks for the 13% lab component.\nIn other words: total lab marks will be capped.The lab exercises for week are worth in total 2 marks.Except there are no marks for the week 1 lab.Usually each lab exercise will be worth the same - for example if\nthere are 5 lab exercises each will be worth 0.4 marks.Except challenge exercises (see below) will never total more than 20% of each week's lab mark.The best 8 of your 9 lab marks for weeks 2-10, will be summed to give you a mark out of 13.If their sum exceeds 13 - your total mark will be capped at 13.Hence:You can miss 1 lab without affecting your mark.You can obtain full marks for the lab component without doing any challenge exercises.Help SessionsThere will be consultation sessions starting in week 2 where tutors will be \navailable for one on one help with\nspecific problems and assignment clarification. These sessions are optional and \nwill run at different times during the week, with more sessions available \naround assignment deadlines and in later weeks of the term. Check the course\ntimetable for what Help Sessions have been scheduled.Live StreamingLive Streaming sessions that you can join from your own computer will be run at\nspecific times in the term when help is needed.\nThese will involve some live problem solving and coding that will \nanswer frequently asked questions as well as show some more examples of specific\ncoding based on student requests. Live participation will allow students to ask\nquestions during the sessions.\nThese sessions will be recorded and available for viewing after they're streamed.\nCheck the course website for a stream schedule.Weekly Coding TestsThere will be 8 weekly coding tests from weeks 3-10 designed to give you timely\n& realistic feedback of your understanding of the course material.These will be conducted in your own time under self-enforced exam-like conditions.Each test will specify the conditions but typically these will includeNo assistance from any person.A time limit (1 hour).No access to materials (written or online) except specified language\n    documentation or man pages.Each coding test will be automatically marked. There will be partial marks for\nattempts which do not pass automatic tests.\n\nHere is an indicative guide:Passes all automatic tests.1/1Fails several automatic tests.0.75/1otherwise0.5/1Your mark for the coding test component will be the sum of your best 7 of 8 test marks.Any deliberate violation of the test conditions will result in a mark of zero\nfor the entire programming test component.The weekly programming test must be completed by Thursday 5pm the week after it is released.AssignmentsThere are two assessable programming assignments. Assignments give you the\nchance to practice what you have learned on relatively large problems (compared\nto the small exercises in the labs).\n\nAssignments are a very important part of this course, therefore it is essential\nthat you attempt them yourself.Assignment 1 (Submission, Week 6)   13%Assignment 2 (Submission, Week 10)  13%The assignment weighting and deadlines may change a little when the assignment\ndesigns are complete.Late assignments submissions will be penalized.  The exact penalty will be\nspecified in the assignment specification - typically it is 2% reduction in maximum\nmark for every hour late.Final ExamThere will be a three-hour primarily practical exam, to be held in the CSE labs\nduring the exam period.  This will be centrally timetabled and appear\nin your UNSW exam timetable.It will contain implementation tasks which will require you to write C programs.\nIt will also contain sections which require you to read code or answer questions.During this exam you will be able to execute, debug and test your answers.\nThe implementation tasks will be similar to those encountered in lab exercisesAssessmentComponentWeightLab Work13%Weekly Tests7%Assignments26%Final Exam  (exam period)54%Supplementary AssessmentStudents will be offered a supplementary exam if they miss the original\nexam due to (documented) illness or misadventure. Applications for Special\nConsideration are handled by UNSW Student Support and Services, not by\nsubject staff.The supplementary exam is scheduled for the week of the 13-17th January 2020.\nIt is your responsibility to be in Sydney and available for the supplementary exam.\nNo alternative will be offered.Student ConductThe Student Code of Conduct (Information,Policy)\nsets out what the University expects from students as members of the UNSW\ncommunity.\n\nAs well as the learning, teaching and research environment, the\nUniversity aims to provide an environment that enables students to achieve\ntheir full potential and to provide an experience consistent with the\nUniversity's values and guiding principles.\n\nA condition of enrolment is that\nstudents inform themselves of the University's rules and policies affecting\nthem, and conduct themselves accordingly.In particular, students have the responsibility to observe standards of equity\nand respect in dealing with every member of the University community.\n\nThis applies to all activities on UNSW premises and all external activities\nrelated to study and research. This includes behaviour in person as well as\nbehaviour on social media, for example Facebook groups set up for the purpose of\ndiscussing UNSW courses or course work.\n\nBehaviour that is considered in breach of the Student Code Policy as\ndiscriminatory, sexually inappropriate, bullying, harassing, invading another's\nprivacy or causing any person to fear for their personal safety is serious\nmisconduct and can lead to severe penalties, including suspension or exclusion\nfrom UNSW.If you have any concerns, you may raise them with your lecturer, or approach\ntheSchool Ethics Officer,Grievance Officer,\nor one of the student representatives.All work submitted for assessment must be your own work.Lab exercises must be completed by you and your partner.Assignments must be completedindividually.Submission of other people's work as your own (plagiarism) has a major impact on\nlearning so we use plagiarism detection software to search for\nmultiply-submitted work.Please note:Submitting part or all of other students' work, with or without acknowledgement,\nis not acceptable.Submitting work written even partly by another person is also not acceptable.Building on ideas and code snippets obtained from public sources, e.g. Stack\nOverflow, is acceptable (unless the assignment/lab forbids this) provided full\nacknowledgement of their resources is made.Discussing approaches to exercises and assignments with other students is quite\nappropriate, but any discussions should remain at the design level, and must not\ninclude program text. Comparison tools will detect any common code across\nthe student body and previous iterations of the course.The safest approach is to work diligently on your own, seeking help from the\nforum or course staff.Submission of work derived from another person, or jointly written with someone\nelse will result in loss of marks and your name being entered on UNSW's\nplagiarism register.\nThis loss of marks often results in the student failing the course.Providing your work to another person will also result in the loss of marks\nand your name being entered on UNSW's plagiarism register.\nDo not provide your work to any other person, even people who are not UNSW students.\nYou will be held responsible for the actions of anyone you provide your work to.Severe or second offences may result in automatic failure or exclusion from UNSW.Make sure you read:the Learning Centre'sexplanation of plagiarism.UNSW's policy regarding academic honesty and plagiarismOther mattersOccupational Health and Safety policiesInformation for students with disabilitiesContact the lecturer ASAP if you have any disabilities that may affect this course.Course Evaluation and DevelopmentEvery semester, COMP1511 student feedback is requested in a survey at the\nend of this course using UNSW's myExperience online survey system.This feedback is used to improve the course materials and their delivery.In the most recent session feedback was very favourable probably as a result of\nchanges based on the previous session's feedback.\n\nFeedback from surveys for COMP1511's previous offerings has resulted in\nchanges to COMP1511 delivery, including introduction of weekly programming tests.\n\nSome lab exercises and lecture topics will be updated to better reflect current\npractice.Students are also encouraged to provide informal feedback during the session,\nand to let the lecturer in charge know of any problems, as soon as they arise.\n\nSuggestions will be listened to very openly, positively, constructively, and\nthankfully, and every reasonable effort will be made to address them.Resources for StudentsNo textbook is required for COMP1511.The optional textbook for the course is:Programming, Problem Solving, and Abstraction with Cby Alistair Moffat,ISBN978\u00a01\u00a074103\u00a0080\u00a03,\nwhich can be purchased from the UNSW Bookshop.COMP1511 19T3: Programming Fundamentalsis brought to you bytheSchool of Computer Science and Engineeringat theUniversity of New South Wales, Sydney.For all enquiries, please email the class account atcs1511@cse.unsw.edu.auCRICOS Provider 00098G",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "",
+        "prereqs": []
+    },
+    "COMP1531": {
+        "offering_time": "T1",
+        "name": "Software Eng Fundamentals",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP1531/19T3/outline",
+        "outline": "This course is teaches students about software engineering principles via exposure to the important practice of building correct products in effectively functioning teams.The goal of this course is to expose the students to:Demonstrating effective use of the python programming languageBasic elements of software engineering - derived from the life-cycle of a software system, including requirements elicitation, analysis and specification; design; construction; verification and validation; deployment;Software engineering methodologies, processes, tools and techniquesAgile software, collaboration and communication practicesWeb-based system architecture and development practices on web platforms",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP1511 or DPST1091 or COMP1917 or COMP1921",
+        "prereqs": {
+            "COMP1511": ""
+        }
+    },
+    "COMP1911": {
+        "offering_time": "T1",
+        "name": "Computing 1A",
+        "url": "https://cgi.cse.unsw.edu.au/~cs1911/19T1/CourseOutline.html",
+        "outline": "fundamental programming conceptsthe C programming language & use of a C compilerprogramming styleprogram design and organisation conceptsprogram testing and debuggingCourse AimsThe course aims for students to become proficient in programming using a high level language, C.\nBy its completion that should be able to construct C programs to solve problems.Student Learning OutcomesLO1: Understand fundamental procedural programming concepts including basic data representation.LO2: Design, implement, test and debug complete C programs to solve specified problems.LO3: Understand good practice for program organsation and programming style.This course contributes to the development of the following graduate capabilities:Graduate CapabilityAcquired inScholars capable of independent and collaborative enquiry, rigorous in their analysis, critique and reflection, and able to innovate by applying their knowledge and skills to the solution of novel as well as routine problemstutorials, labs and assignmentsProfessionals capable of ethical, self- directed practice and independent lifelong learninglabs,assignmentsGlobal citizens who are culturally adept and capable of respecting diversity and acting in a socially just and responsible waylectures, tutorials, labsTeaching RationaleThis course has a heavy practical orientation.  Lectures will revolve\naround live demonstrations of programming and use of tools.\nLabs & assignments form a key part.Teaching StrategiesLecturesLectures will be used to present the theory and\npractice of the techniques and tools in this course. There will be\nextensive use of  practical demonstrations during  \nlectures. Lecture notes will be available on the course web pages\nbefore each lecture. Lecture recordings will be available online a short time after the actual lectures.TutorialsFrom week 1 you will also be expected to attend a one-hour tutorial\nsession to clarify ideas from lectures and work through exercises\nbased on the lecture material. You should make sure that you use them\neffectively by examining in advance the material to be covered in each\nweek's tute, by asking questions, by offering suggestions and by generally\nparticipating. The tutorial questions will be posted on the Web in the\nweek before each tute.  There are no marks for tutorial attendance.Laboratory ClassesFollowing the tute class each week, there will be a two-hour lab class,\nduring which you will work on a variety of small practical problems\ninvolving the tools introduced in lectures.\nBecause this course is practical in nature, lab class are a very\nimportant component, and you should make every effort to attend \nthe labs and complete the exercises diligently.\nIn particular,keep up-to-datewith the Lab work; if you fall\nbehind it affects your ability to understand later material in the\ncourse.To obtain a mark for a lab exercise you must both demonstrate the completed lab exercise to your tutor during a lab class and submit it using give.If you don't complete a lab exercise during the scheduled class, you can still obtain the mark if you both submit the completed exercises before midnight Sunday and you demonstrate it to you tutor in the follow week's lab.Lab exercises will be assessed using the following grade system:GradeMarkCriteriaA+1.25Complete, correct solution with perfect styleA1Competent solution to core part of lab -  any problems or bugs must be minorB0.5Incomplete solution, or complete with significant defects or obvious bugsC0.25Partial solution only, minimal achievement; or inability to explain solutionD or .0Not attemptedChallenge exercises are optional to attempt/complete. Completing challenge exercises can help boost your lab mark. For example, if you get an A for all non-challenge exercises (because you made a couple of mistakes), then if you also complete the challenge exercise that can be your path to an A+ instead of further improving the other non-challenge exercises.Your lab marks (there will be 9 labs in total) will be summed and capped at 8 marks. These 8 marks will contribute 10% of your overall course mark as per the assessment section below.AssignmentsThere are two assessable programming assignments. Assignments give you the chance to practice what you have learnt on relatively large problems (compared to the small exercises in the labs). Assignments are a very important part of this course, therefore it is essential that you attempt them yourself.Assignment 1 (Submission, Week 5) \t15%Assignment 2 (Submission, Week 9) \t15%The deadlines may be slightly varied when the assignment designs are complete\nand to fit best with the lecture schedule.Late programming assignments will be penalized.  The exact penalty will be \nspecified in the assignment specification - often it is 2% reduction in maximum\nmark for every hour late.ExamThere will be a three-hour exam, to be held in the CSE labs\nduring the exam period.\nIt consists of  small implementation tasks which will require you to write C programs,\nand some theory questions. All questions will be answered and submitted on a computer. There is no handwritten component.During this exam you will be able to execute, debug and test your programs.\nThe implementation tasks will be similar to those encountered in lab exercisesIt  is a hurdle requirement for this course that you perform satisfactorily\non the implementation tasks in the exam.  Satisfactory performance is\ndefined as  solving two of the small implementation tasks.The exact  exam format (exam skeleton) will be released in week 13\nbut it is likely there will be 4 implementation tasks.AssessmentComponentValueContributes to Learning OutcomesLab Work10%LO1,LO2,LO3Assignments30%LO1,LO2,LO3Exam60%LO1As mentioned above, your performance on the practical component\nof the final exam must also be satisfactory to pass the course.The lecturer may scale overall marks, or individual components, up or down to\nobtain a desired mark distribution (don't panic - scaling marks down is very rare).Supplementary ExamsThe document\"Essential Advice for CSE Students\"states the supplementary assessment policy for the School of CSE. Please take the time to read it carefully.If you are granted a Supplementary examination, then it will be held on the date specified in the above document. If you think that you may be eligible for a supplementary exam, then make sure you are available on that day. It is your responsibility to check at the School Office for details of Supplementary examinations.Content cheduleThe following content schedule is a draft only and is subject to change throughout the session.Week 1Introduction, C BasicsWeek 2Numeric Types and C conditionsWeek 3Loops & FunctionsWeek 4ArraysWeek 5Characters and StringsWeek 6Pointers and memoryWeek 7StructsWeek 8Stacks and queuesWeek 10Bonus / Extension contentWeek 11Exam RevisionCourse evaluation and developmentEvery semester, COMP1911 Student feedback is requested in a survey at the end of this course\nusing UNSW's CATEI online survey system.This feedback is used to improve the course materials & their delivery.Feedback from the last year was very positive. However it was suggested to provide more and better access to sample code and better practice material for the exam.Resources for StudentsInformation for students with disabilitiesTalk to  the lecturer  if you have any disabilities that may affect this course.The optional textbook for the course is:Alistair Moffat,Programming, Problem Solving, and Abstraction with C,Pearson Education, 2012.For pointers to other useful reading material, including documentation\nfor all of the tools used in the practical work, see the course Web pages.Academic Honesty and PlagiarismUNSW has an ongoing commitment to fostering a culture of learning informed by academic integrity. All UNSW staff and students have a responsibility to adhere to this principle of academic integrity. Plagiarism undermines academic integrity and is not tolerated at UNSW. Plagiarism at UNSW is defined as using the words or ideas of others and passing them off as your own.If you haven't done so yet, please take the time to read the full text ofUNSW's policy regarding academic honesty and plagiarismThe pages below describe the policies and procedures in more detail:Student Code PolicyPlagiarism Policy StatementPlagiarism ProcedureStudent Misconduct ProcedureAll work submitted for assessment must be your own work.Lab exercises and assignments must be completedindividually.\nWe regard copying of\nassignments or lab exercises, in whole or part, as a very serious offence.\nWe use plagiarism detection software to search for\nmultiply-submitted work.Submitting part or all of other students' work, with or without acknowledgement, is not acceptable.Submitting solutions written by other persons is also not acceptable.Building on ideas and partial solutions obtained from public sources, such as web resources, may be acceptable, provided full acknowledgement is made. However, the final mark will take into account the starting point and how much development work would have been required. Failing to acknowledge web or other resources is unacceptable.Discussing approaches to solutions with other students is quite appropriate, but any discussions should remain at the design level, and must not include program text. Comparison tools will detect any common code across the student body.The safest approach is to work diligently on your own, seeking help from the forum or course staff.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "Enrolment in a non-CSE major (no BINF, COMP, or SENG)",
+        "prereqs": {}
+    },
+    "COMP2111": {
+        "offering_time": "T1",
+        "name": "System Modelling and Design",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP2111/19T1/outline",
+        "outline": "The course builds on the MATH1081 Discrete Mathematics course, examining the role of Mathematics in Computer Science.  The main focus will be on introducing students to formal modelling and specification and how they are used in Software Development.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "MATH1081 AND (COMP1511 OR DPST1091 OR COMP1917 OR COMP1921)",
+        "prereqs": [
+            "AND",
+            {
+                "COMP1511": ""
+            },
+            {
+                "MATH1081": ""
+            }
+        ]
+    },
+    "COMP2121": {
+        "offering_time": "T1",
+        "name": "Microprocessors & Interfacing",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP2121/19T2/outline",
+        "outline": "The aims of this course are to introduce students to the basic concepts and major components of microprocessors and micro controllers and to provide students with knowledge and skills for solving problems with microprocessors and micro-controllers.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP1917 OR COMP1921 OR COMP1511 OR DPST1091 OR COMP1521 OR DPST1092 OR (COMP1911 AND MTRN2500)",
+        "prereqs": [
+            "OR", [
+                "OR",
+                {
+                    "COMP1911": ""
+                },
+                {
+                    "COMP1521": ""
+                }
+            ],
+            {
+                "COMP1511": ""
+            }
+        ]
+    },
+    "COMP3121": {
+        "offering_time": "T1",
+        "name": "Algorithms & Programming Tech",
+        "url": "https://cgi.cse.unsw.edu.au/~cs3121/extended.php",
+        "outline": "",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP1927 or COMP2521",
+        "prereqs": {
+            "COMP2521": ""
+        }
+    },
+    "COMP3131": {
+        "offering_time": "T1",
+        "name": "Programming Languages & Compil",
+        "url": "https://www.cse.unsw.edu.au/~cs3131/19T1/Info/index.html",
+        "outline": "This subject focusses on basic compiler techniques needed to implement programming languages in a virtual machine (with emphasis on the compiler front end). By writing a compiler in Java to translate a variant of C into Java bytecode, you are also expected to gain a good understanding of important fundamental principles in object-oriented programming languages and develop further your programming and software engineering skills.\nThis project, which consists of a sequence of five programming assignments, can be challenging but fun. It is probably the first time that you write a compiler and run a program that you compiled! In exchange for your hard work, you will learn a lot about programming languages, compilers, software development and how to use programming language expertise to make a large project work better.\n\nGraduate attributes (UNSW graduate attributes are the qualities, skills and understandings a university agrees its students should develop during their studies. Some of these graduate attributes will be developed and assessed in this course in terms of the knowledge and skill outcomes listed below.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP2511 or COMP2911",
+        "prereqs": {
+            "COMP2511": ""
+        }
+    },
+    "COMP3153": {
+        "offering_time": "T1",
+        "name": "Algorithmic Verification",
+        "url": "http://www.cse.unsw.edu.au/~cs3153/20T1/outline.html",
+        "outline": "It is virtually impossible to guarantee correctness of a system, and in turn the absence of bugs by standard software engineering practice such as code review, systematic testing and good software design alone. The complexity of systems is typically too high to be manageable by informal reasoning or reasoning that is not tool supported. The formal methods community has developed various rigorous, mathematically sound techniques and tools that allow the automatic analysis of systems and software. The application of these fully automatic techniques is typically called algorithmic verification. The course will describe several automatic verification techniques, the algorithms they are based on, and the tools that support them. We will discuss examples to which the techniques have been applied, and provide experience with the use of several state-of-the-art analysis tools.\n\nThe topics covered by the lectures will educate students on the foundations of automata theory and temporal logics, LTL and CTL model checking techniques and model checking tools, the application of static analysis techniques to program verification, and modern advanced verification techniques for timed and probabilistic systems.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "MATH1081",
+        "prereqs": {
+            "MATH1081": ""
+        }
+    },
+    "COMP3211": {
+        "offering_time": "T1",
+        "name": "Computer Architecture",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3211/19T1/outline",
+        "outline": "",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP3222 or ELEC2141.",
+        "prereqs": {
+            "COMP3222": ""
+        }
+    },
+    "COMP3231": {
+        "offering_time": "T1",
+        "name": "Operating Systems",
+        "url": "http://cgi.cse.unsw.edu.au/~cs3231/intro.php",
+        "outline": "Operating systems are an essential part of computer systems, a course on\n    operating systems is an essential part of any computer science or computer\n    engineering program. This course exposes students to the essential\n    concepts and issues that underlie operating systems and their design.In general terms, the course aims to educate students in the basic\n    concepts and components of operating systems, the relevant characteristics\n    of hardware, and the trade-offs between conflicting objectives faced by\n    the operating systems in efficiently supporting a wide range of\n    applications.This course provides an understanding of the underlying\n    operating systems which students have implicitly relied upon\n    when developing applications in the foundational courses within\n    Computer Science and Engineering. The knowledge gained will\n    continue to be relevant in future careers when developing\n    systems and applications.  The course also builds upon\n    COMP2121/9032Microprocessors and Interfacingby\n    illustrating how more complex software systems are supported on\n    microprocessor-based systems.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "(COMP1521 or DPST1092 or COMP2121 or ELEC2142) and (COMP2521 or COMP1927)",
+        "prereqs": [
+            "AND", [
+                "OR",
+                {
+                    "COMP2121": ""
+                },
+                {
+                    "COMP1521": ""
+                }
+            ],
+            {
+                "COMP2521": ""
+            }
+        ]
+    },
+    "COMP3311": {
+        "offering_time": "T1",
+        "name": "Database Systems",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3311/19T3/outline",
+        "outline": "This course aims to explore in depth the practice of developing database applications and the theory behind relational database management systems (RDBMSs). It will also give an overview of the technologies used in implementing database management systems and the past, present and future of database systems and database research.Large data resources are critical to the functioning of just about every significant modern computer application. Hence, knowledge of how to manage them is clearly important to the IT industry. In the context of further study, understanding how to use databases effectively is essential for courses such asCOMP9321Data Services Engineering andCOMP9322Software Service Design and Engineering. COMP3311 also provides a foundation for further study in advanced database topics, such asCOMP9315Database Systems Implementation andCOMP9318Data Warehousing and Data Mining. Database concepts are also relevant in courses such asCOMP9319Web Data Compression and Search andCOMP6714Information Retrieval and Web Search.By the end of this course, we want you to be capable of building high-quality (correct, efficient, and usable) applications based on relational databases, to have a sound understanding of issues in administering relational database management systems, and have an overview of how they work internally.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP2521 or COMP1927",
+        "prereqs": {
+            "COMP2521": ""
+        }
+    },
+    "COMP3891": {
+        "offering_time": "T1",
+        "name": "Ext Operating Systems",
+        "url": "http://cgi.cse.unsw.edu.au/~cs3231/intro.php",
+        "outline": "Operating systems are an essential part of computer systems, a course on\n    operating systems is an essential part of any computer science or computer\n    engineering program. This course exposes students to the essential\n    concepts and issues that underlie operating systems and their design.In general terms, the course aims to educate students in the basic\n    concepts and components of operating systems, the relevant characteristics\n    of hardware, and the trade-offs between conflicting objectives faced by\n    the operating systems in efficiently supporting a wide range of\n    applications.This course provides an understanding of the underlying\n    operating systems which students have implicitly relied upon\n    when developing applications in the foundational courses within\n    Computer Science and Engineering. The knowledge gained will\n    continue to be relevant in future careers when developing\n    systems and applications.  The course also builds upon\n    COMP2121/9032Microprocessors and Interfacingby\n    illustrating how more complex software systems are supported on\n    microprocessor-based systems.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "(COMP1521 or DPST1092 or COMP2121) and (COMP2521 or COMP1927) and a WAM of at least 75",
+        "prereqs": [
+            "AND", [
+                "OR",
+                {
+                    "COMP2121": ""
+                },
+                {
+                    "COMP1521": ""
+                }
+            ],
+            {
+                "COMP2521": ""
+            }
+        ]
+    },
+    "COMP3900": {
+        "offering_time": "T1",
+        "name": "Computer Science Project",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9900/19T1/outline",
+        "outline": "A capstone software project. Students work in teams to define, implement and evaluate a real-world software system. Most of the work in this course is team-based project work, although there are some introductory lectures on software project management and teamwork strategies. Project teams meet weekly with project mentors to report on the progress of the project. Assessment is based on a project proposal, a final project demonstration and report, and on the quality of the software system itself. Students are also required to reflect on their work and to provide peer assessment of their team-mates' contributions to the project.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP1531, and COMP2521 or COMP1927, and enrolled in a BSc Computer Science major with completion of 102 uoc.",
+        "prereqs": [
+            "AND",
+            {
+                "COMP2521": ""
+            },
+            {
+                "COMP1531": ""
+            }
+        ]
+    },
+    "COMP3902": {
+        "offering_time": "T1",
+        "name": "Special Project B",
+        "url": "http://www.cse.unsw.edu.au/~morri/specialProject.html",
+        "outline": "This course aims to develop skills in conducting a research project.\nUnder special circumstances, students can request to conduct a\nresearch project supervised by academic staff.\nThis page covers special projects under the supervision of\nMaurice Pagnucco (morri [AT] cse.unsw.edu.au).\nThese projects will primarily involve robotics projects,\nprimarily as part of theCSE RoboCup team.The UNSW Handbook Entries provide some additional information:COMP3901: Special Project ACOMP3902: Special Project BThere is alsosome information here.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "80+ WAM in COMP, SENG or BINF courses, completion of all first and second year core requirements a CSE program, and agreement from a suitable CSE academic supervisor.",
+        "prereqs": {}
+    },
+    "COMP4141": {
+        "offering_time": "T1",
+        "name": "Theory of Computation",
+        "url": "https://www.cse.unsw.edu.au/~cs4141/19s1/admin/outline.html",
+        "outline": "After successfully completing this course, you will appreciate the\n  fundamental questions of computer science:What problems can be solved by a computation?How hard is it to compute solutions?How can we express computation?You will also be aware of some concrete answers to these and related\ngreat questions of computer science, the reasons why some questions\nin this area will remain unanswered forever, and that some answers\nare still being sought.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9020 and COMP9024",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9024": ""
+            },
+            {
+                "COMP9020": ""
+            }
+        ]
+    },
+    "COMP4337": {
+        "offering_time": "T1",
+        "name": "Securing Wireless Networks",
+        "url": "http://www.cse.unsw.edu.au/~cs9337/CourseOutline-V1.pdf",
+        "outline": "To provide an in-depth introduction to a wide range of topics in the field of Wireless Network Security. To get a hands-on understanding of the security issues in wireless networks. Assumed KnowledgeBefore commencing this course, students should:have completed COMP3331/9331<o:p></o:p>have programming skills acquired in other subjects.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP3331.",
+        "prereqs": {
+            "COMP3331": ""
+        }
+    },
+    "COMP4601": {
+        "offering_time": "T1",
+        "name": "Design Project B",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP4601/19T1/outline",
+        "outline": "COMP4601 is a team-based project development course involving the design and implementation of embedded and/or high performance and/or low power systems using FPGAs.Teams develop a solution to one of a number of suggested project problems. Project teams are expected to investigate possible approaches, develop their proposal, implement their design, present their solution, and to report on their investigation and implementation.The course involves lectures, seminars, lab exercises and project work. Lectures will provide some context for the problems being studied and some background on solution approaches. Students will prepare and assess seminars on related research publications. Project teams will present the results of their investigations and developments.Return to ToC",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP3211 and COMP3601.",
+        "prereqs": [
+            "AND",
+            {
+                "COMP3601": ""
+            },
+            {
+                "COMP3211": ""
+            }
+        ]
+    },
+    "COMP4930": {
+        "offering_time": "T1",
+        "name": "Thesis Part A",
+        "url": "",
+        "outline": "",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "Enrolment in Bachelor of Science (Honours) program 4515, or 126 units of credit completed in BE Computer Engineering, BE Bioinformatics or Bioinformatics Engineering, or BE (Honours) Software Engineering.",
+        "prereqs": {}
+    },
+    "COMP4931": {
+        "offering_time": "T1",
+        "name": "Thesis Part B",
+        "url": "",
+        "outline": "",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "Program 4515.",
+        "prereqs": {
+            "COMP4930": ""
+        }
+    },
+    "COMP4941": {
+        "offering_time": "T1",
+        "name": "Thesis Part B",
+        "url": "",
+        "outline": "",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP4930 and [75 WAM or enrolment in Computer Science Honours]",
+        "prereqs": {
+            "COMP4930": ""
+        }
+    },
+    "COMP4951": {
+        "offering_time": "T1",
+        "name": "Research Thesis A",
+        "url": "",
+        "outline": "",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "Enrolled in a CSE BE (Hons) programs, completion of 126 UOC and completion of 3rd year core.",
+        "prereqs": {}
+    },
+    "COMP4961": {
+        "offering_time": "T1",
+        "name": "Computer Science Thesis A",
+        "url": "",
+        "outline": "",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "Students enrolled in program 4515 Bachelor of Computer Science (Hons) or program 3648.",
+        "prereqs": {}
+    },
+    "COMP4962": {
+        "offering_time": "T1",
+        "name": "Computer Science Thesis B",
+        "url": "",
+        "outline": "",
+        "grad_level": "Students must successfully complete COMP4951",
+        "handbook_prereqs": "COMP4951",
+        "prereqs": []
+    },
+    "COMP4963": {
+        "offering_time": "T1",
+        "name": "Computer Science Thesis C",
+        "url": "",
+        "outline": "",
+        "grad_level": "Student must successfully complete COMP4962",
+        "handbook_prereqs": "COMP4962",
+        "prereqs": []
+    },
+    "COMP6324": {
+        "offering_time": "T1",
+        "name": "IoT Services Engineering",
+        "url": "https://webcms3.cse.unsw.edu.au/static/uploads/course/COMP6324/19T1/631dd155aeed367453982611e08fa3c3dc676bb7031cdae6a59d0d295b123c94/COMP6324_Course_Outline_v2.8_-_published.pdf",
+        "outline": "IoT is an emerging technology that will transform business and societies across the world.\nSimilar to AI, mobile or Cloud it will have a profound impact on the existing technology landscape,\ncustomer experience, operational processes and business models.\nThis course provides an overview of the topic from a business and technology perspective and\nallows the students to experience the full lifecycle of IoT, from the overall corporate strategy to\nthe actual implementation of an IoT application.\nThis course is a project-based course and its design is based on the action-learning concept\nused at MIT and Harvard and the course design has been reviewed by professors at MIT and\nHarvard.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9021 and COMP9311",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9311": ""
+            },
+            {
+                "COMP9021": ""
+            }
+        ]
+    },
+    "COMP6443": {
+        "offering_time": "T1",
+        "name": "Web Application Security",
+        "url": "https://webcms3.cse.unsw.edu.au/static/uploads/course/COMP6443/19T1/1136c95eb7873bb6aa7866c7933ac655bda339753c40f85b97ec7d9bad827c00/Web_Application_Security_v2.pdf",
+        "outline": "Web applications are currently the predominant source of software vulnerabilities\nexploited in online attacks worldwide. Most of these attacks exploit simple and easily\nremedied classes of security vulnerabilities. There is a clear and vastly unmet need\nfor all web programmers to be security literate. There is also a substantial worldwide\nshortage of security professionals capable of assessing the security of Web\nApplications.\nThese courses cover the main types of web application vulnerabilities and introduce\ncurrent professional best practices in Web design, coding and testing providing the\nknowledge and introductory skills needed successfully develop and test secure web\napplications.\nThe core level course is an important course to take if you wish to develop or rely\nupon web applications, or will have risk, or governance responsibilities in any\norganisation which uses or develops web applications i.e. just about everyone.\nThe extended level course is for security professionals or professional web developers\nand covers a wider range of vulnerabilities and in greater depth than the core level\ncourses.\nExtended course content for COMP6843 students will be covered in the extended\nlecture. COMP6443 students are welcome to attend the extended lecture too if they\nare interested.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP6441 or COMP6841 or COMP9441",
+        "prereqs": [
+            "OR", [
+                "OR",
+                {
+                    "COMP9441": ""
+                },
+                {
+                    "COMP6841": ""
+                }
+            ],
+            {
+                "COMP6441": ""
+            }
+        ]
+    },
+    "COMP6452": {
+        "offering_time": "T1",
+        "name": "Blockchain App Architecture",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP6452/19T1/outline",
+        "outline": "A new course in a popular area, which complements the other new course in this space (COMP6451 Cryptocurrency and Distributed Ledger Technologies). It will be taught initially by the blockchain group from Data61 (Ingo Weber, Xiwei Xu, Mark Staples), who have established a strong reputation for their work in this area.This course addresses the knowledge that is needed in order to build applications based on blockchain technology, by offering an architectural view of software systems that make beneficial use of it. It provides guidance on assessing the suitability of blockchain, on the roles blockchain can play in an architecture, on designing blockchain applications, and on assessing different architecture designs and tradeoffs. It also serves as a reference on blockchain design patterns and design analysis, and refers to practical examples of blockchain-based applications.The course covers the following:a general introduction to the topic and to existing blockchain platforms including Bitcoin, Ethereum, and Hyperledger Fabric, and offers examples of blockchain-based applications;the functional aspects of software architecture are covered, describing the main roles blockchain can play in an architecture, as well as its potential suitability and design process;non-functional aspects of blockchain applications, which are often cross-cutting concerns including cost estimation, performance, security;Real-world use cases will be covered, offering additional insights from a practical perspective.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024.",
+        "prereqs": {
+            "COMP9024": ""
+        }
+    },
+    "COMP6843": {
+        "offering_time": "T1",
+        "name": "Extended WebApp Security",
+        "url": "https://webcms3.cse.unsw.edu.au/static/uploads/course/COMP6443/19T1/1136c95eb7873bb6aa7866c7933ac655bda339753c40f85b97ec7d9bad827c00/Web_Application_Security_v2.pdf",
+        "outline": "Web applications are currently the predominant source of software vulnerabilities\nexploited in online attacks worldwide. Most of these attacks exploit simple and easily\nremedied classes of security vulnerabilities. There is a clear and vastly unmet need\nfor all web programmers to be security literate. There is also a substantial worldwide\nshortage of security professionals capable of assessing the security of Web\nApplications.\nThese courses cover the main types of web application vulnerabilities and introduce\ncurrent professional best practices in Web design, coding and testing providing the\nknowledge and introductory skills needed successfully develop and test secure web\napplications.\nThe core level course is an important course to take if you wish to develop or rely\nupon web applications, or will have risk, or governance responsibilities in any\norganisation which uses or develops web applications i.e. just about everyone.\nThe extended level course is for security professionals or professional web developers\nand covers a wider range of vulnerabilities and in greater depth than the core level\ncourses.\nExtended course content for COMP6843 students will be covered in the extended\nlecture. COMP6443 students are welcome to attend the extended lecture too if they\nare interested.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP6441 or COMP6841 or COMP9441",
+        "prereqs": [
+            "OR", [
+                "OR",
+                {
+                    "COMP9441": ""
+                },
+                {
+                    "COMP6841": ""
+                }
+            ],
+            {
+                "COMP6441": ""
+            }
+        ]
+    },
+    "COMP9020": {
+        "offering_time": "T1",
+        "name": "Foundations of Comp. Science",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9020/19T3/outline",
+        "outline": "The official scope is: mathematical methods for designing correct and \nefficient programs; mathematics for algorithm analysis; logic for \nproving and verification.The actual content is taken from a list of subjects that constitute \nthe basis of the tool box of every serious practitioner of computing: \nset and relation theory; induction, recursion and recurrence relations; \norder of growth of functions; structured counting (combinatorics); \ndiscrete probability; graph theory and trees for algorithmic \napplications; propositional logic and boolean algebras.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "",
+        "prereqs": []
+    },
+    "COMP9021": {
+        "offering_time": "T1",
+        "name": "Principles of Programming",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9021/19T3/outline",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "",
+        "prereqs": []
+    },
+    "COMP9101": {
+        "offering_time": "T1",
+        "name": "Design &Analysis of Algorithms",
+        "url": "https://cgi.cse.unsw.edu.au/~cs3121/extended.php",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9021",
+        "prereqs": {
+            "COMP9021": ""
+        }
+    },
+    "COMP9102": {
+        "offering_time": "T1",
+        "name": "Programming Lang & Compilers",
+        "url": "https://www.cse.unsw.edu.au/~cs3131/19T1/Info/index.html",
+        "outline": "This subject focusses on basic compiler techniques needed to implement programming languages in a virtual machine (with emphasis on the compiler front end). By writing a compiler in Java to translate a variant of C into Java bytecode, you are also expected to gain a good understanding of important fundamental principles in object-oriented programming languages and develop further your programming and software engineering skills.\nThis project, which consists of a sequence of five programming assignments, can be challenging but fun. It is probably the first time that you write a compiler and run a program that you compiled! In exchange for your hard work, you will learn a lot about programming languages, compilers, software development and how to use programming language expertise to make a large project work better.\n\nGraduate attributes (UNSW graduate attributes are the qualities, skills and understandings a university agrees its students should develop during their studies. Some of these graduate attributes will be developed and assessed in this course in terms of the knowledge and skill outcomes listed below.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024.",
+        "prereqs": {
+            "COMP9024": ""
+        }
+    },
+    "COMP9153": {
+        "offering_time": "T1",
+        "name": "Algorithmic Verification",
+        "url": "http://www.cse.unsw.edu.au/~cs3153/20T1/outline.html",
+        "outline": "It is virtually impossible to guarantee correctness of a system, and in turn the absence of bugs by standard software engineering practice such as code review, systematic testing and good software design alone. The complexity of systems is typically too high to be manageable by informal reasoning or reasoning that is not tool supported. The formal methods community has developed various rigorous, mathematically sound techniques and tools that allow the automatic analysis of systems and software. The application of these fully automatic techniques is typically called algorithmic verification. The course will describe several automatic verification techniques, the algorithms they are based on, and the tools that support them. We will discuss examples to which the techniques have been applied, and provide experience with the use of several state-of-the-art analysis tools.\n\nThe topics covered by the lectures will educate students on the foundations of automata theory and temporal logics, LTL and CTL model checking techniques and model checking tools, the application of static analysis techniques to program verification, and modern advanced verification techniques for timed and probabilistic systems.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9020",
+        "prereqs": {
+            "COMP9020": ""
+        }
+    },
+    "COMP9201": {
+        "offering_time": "T1",
+        "name": "Operating Systems",
+        "url": "http://cgi.cse.unsw.edu.au/~cs3231/intro.php",
+        "outline": "Operating systems are an essential part of computer systems, a course on\n    operating systems is an essential part of any computer science or computer\n    engineering program. This course exposes students to the essential\n    concepts and issues that underlie operating systems and their design.In general terms, the course aims to educate students in the basic\n    concepts and components of operating systems, the relevant characteristics\n    of hardware, and the trade-offs between conflicting objectives faced by\n    the operating systems in efficiently supporting a wide range of\n    applications.This course provides an understanding of the underlying\n    operating systems which students have implicitly relied upon\n    when developing applications in the foundational courses within\n    Computer Science and Engineering. The knowledge gained will\n    continue to be relevant in future careers when developing\n    systems and applications.  The course also builds upon\n    COMP2121/9032Microprocessors and Interfacingby\n    illustrating how more complex software systems are supported on\n    microprocessor-based systems.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024 and COMP9032.",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9032": ""
+            },
+            {
+                "COMP9024": ""
+            }
+        ]
+    },
+    "COMP9211": {
+        "offering_time": "T1",
+        "name": "Computer Architecture",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3211/19T1/outline",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9222.",
+        "prereqs": {
+            "COMP9222": ""
+        }
+    },
+    "COMP9283": {
+        "offering_time": "T1",
+        "name": "Ext Operating Systems",
+        "url": "http://cgi.cse.unsw.edu.au/~cs3231/intro.php",
+        "outline": "Operating systems are an essential part of computer systems, a course on\n    operating systems is an essential part of any computer science or computer\n    engineering program. This course exposes students to the essential\n    concepts and issues that underlie operating systems and their design.In general terms, the course aims to educate students in the basic\n    concepts and components of operating systems, the relevant characteristics\n    of hardware, and the trade-offs between conflicting objectives faced by\n    the operating systems in efficiently supporting a wide range of\n    applications.This course provides an understanding of the underlying\n    operating systems which students have implicitly relied upon\n    when developing applications in the foundational courses within\n    Computer Science and Engineering. The knowledge gained will\n    continue to be relevant in future careers when developing\n    systems and applications.  The course also builds upon\n    COMP2121/9032Microprocessors and Interfacingby\n    illustrating how more complex software systems are supported on\n    microprocessor-based systems.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024 AND COMP9032 AND a WAM of at least 75",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9032": ""
+            },
+            {
+                "COMP9024": ""
+            }
+        ]
+    },
+    "COMP9311": {
+        "offering_time": "T1",
+        "name": "Database Systems",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9311/19T3/outline",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "",
+        "prereqs": []
+    },
+    "COMP9318": {
+        "offering_time": "T1",
+        "name": "Data Warehousing & Data Mining",
+        "url": "http://www.cse.unsw.edu.au/~cs9318/20t1/intro.html",
+        "outline": "This course aims to introduce the foundation of data warehousing, the theories of various data mining techniques and explore the practice of developing data mining applications. This course is one of the advanced database course series. Other advanced database courses include:\n\nCOMP9313 (Big Data Management),\n\nCOMP9314 (Next Generation Database Systems),\n\nCOMP9315 (DBMS Implementation),\n\nCOMP9317 (XML and Databases),\n\nCOMP9319 (Web Data Compression and Search).\n\nThe course is designed to be practical. As such, real-life examples of data mining issues and applications will also be used throughout the course.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9020 and COMP9024 and COMP9311",
+        "prereqs": [
+            "AND", [
+                "AND",
+                {
+                    "COMP9311": ""
+                },
+                {
+                    "COMP9024": ""
+                }
+            ],
+            {
+                "COMP9020": ""
+            }
+        ]
+    },
+    "COMP9321": {
+        "offering_time": "T1",
+        "name": "Data Services Engineering",
+        "url": "https://webcms3.cse.unsw.edu.au/static/uploads/course/COMP9321/19T1/9ee17a6ddc007f6b1025ed043947a36850bbc42ccdfc3b8e4763215a3e38b730/CourseOutlines_2019T1.pdf",
+        "outline": "Software engineering has advanced rapidly in recent years. The knowledge-, service-, and cloudbased economy in parallel with the continuous improvement in connectivity, storage and data\nprocessing capabilities allow access to a data deluge from sensors, social-media, news, usergenerated, government and private data sources. Accordingly, in a modern data-oriented\nlandscape, data-driven applications may need to deal with a collection of data sets - from\nunstructured, relational to NoSQL - that holds a vast amount of information gathered from various\nprivate/open data sources. Therefore, well-engineered service-oriented functionalities are critical\nfor ingesting, organizing and querying the growing volume of data in modern web-based\napplications, as well as recommender systems that can help making decisions.\nThis course aims to introduce the student to core concepts and practical skills for engineering the\ndata in service-oriented data-driven applications. Specifically, the course aims to answer these\nquestions:\n\u2022 How to access and ingest data from various external sources?\n\u2022 How to process and store the data for applications?\n\u2022 How to curate (e.g. Extract, Transform, Correct, Aggregate, and Merge/Split) and\npublish the data?\n\u2022 How to apply available analytics to the data?\n\u2022 How to visualize the data to communicate effectively\n\u2022 How to utilize recent recommender systems to help making decisions?\nFundamentally, we will look at these questions through the lens of 'service-oriented' software\ndesign and implementation principles. At each topic, we will learn some core concepts, and how\nto implement the concepts in software through services. \nThe course uses the Python Programming Language as the practical basis for its modules.\nHowever, the concepts taught are universal and can be applied to any other web development\nframework",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9021 and COMP9311",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9311": ""
+            },
+            {
+                "COMP9021": ""
+            }
+        ]
+    },
+    "COMP9322": {
+        "offering_time": "T1",
+        "name": "Software Service Design & Eng",
+        "url": "https://webcms3.cse.unsw.edu.au/static/uploads/course/COMP9322/19T1/27f3fc97f2c2d36a28ec8c46eb068560041dca9146b49b09d0b431c992e963d3/COMP9322_Syllabus_2019_v1.1.pdf",
+        "outline": "Today\u2019s modern era permeates with phenomenal growth and advancement across a wide\nrange of areas: from science and technology, to medicine and art, as well the social\nsciences. Amongst all, the notion of \u201cservices\u201d plays a critical role to abstract and make\navailable snippets of innovation, that can thereby be used cross-disciplinary to create bigger,\nbetter and more interesting innovations. This course arms students with the knowledge and\nexpertise to \u201cdesign\u201d and \u201cengineer\u201d services using modern Web technology.\nStudents will appreciate the importance of the Service Oriented Architecture (SOA) as a way\nto design an enterprise environment that features cross-platform compatibility, agility and\ncost-efficiency. In particular, microservices variant will be taught and serverless computing\nwill be introduced. Also students will learn about cognitive services and how conversational\nBots can be used to allow natural interactions between Humans and services.\nIn addition, this course will strengthen students\u2019 data modeling expertise, covering topics on\nenterprise modelling and semantic modelling of both simple and complex structures, and\ntheir usage in business analysis. This will also describe the technical standards and\ntechnologies that support semantic data modelling.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9321.",
+        "prereqs": {
+            "COMP9321": ""
+        }
+    },
+    "COMP9334": {
+        "offering_time": "T1",
+        "name": "Systems Capacity Planning",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9334/19T1/outline",
+        "outline": "We live in a world that events do not happen instantly. It takes a certain amount of time to download a video from a server to your own mobile device. It takes a certain amount of time for a computer to finish the execution of an algorithm. The time to completion (or response time in performance analysis terminology) is a performance metric that computer scientists and computer engineers should be concerned about because no one wants to wait unnecessarily. If you can understand the factors that determine the response time, then you can influence those factors so that the response time is acceptable. This course will take a mathematical modelling and analytical approach to understand response time in computer systems and networks. The primary goal is to explore how mathematical modelling and mathematical methods can be used to model, analyse and design computer systems and networks so that they have good performance. There are three major topics that will be covered by this course:Queuing analysis (Note: Queues are important because they give rise to waiting time.)Discrete event simulationInteger programming for network design",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9021",
+        "prereqs": {
+            "COMP9021": ""
+        }
+    },
+    "COMP9337": {
+        "offering_time": "T1",
+        "name": "Securing Wireless Networks",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9337/20T1/outline",
+        "outline": "To provide an in-depth introduction to a wide range of topics in the field of Wireless Network Security. To get a hands-on understanding of the security issues in wireless networks. Assumed KnowledgeBefore commencing this course, students should:have completed COMP3331/9331<o:p></o:p>have programming skills acquired in other subjects.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9331.",
+        "prereqs": {
+            "COMP9331": ""
+        }
+    },
+    "COMP9900": {
+        "offering_time": "T1",
+        "name": "Info Tech Project",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9900/19T3/outline",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "Completion of at least 72 UOC towards MIT program 8543.  Students must be in their final semester of study.",
+        "prereqs": {}
+    },
+    "COMP1000": {
+        "offering_time": "T2",
+        "name": "Web, Spreadsheets & Databases",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP1000/18s1/outline",
+        "outline": "This course will explore fundamental concepts of the world wide web (www), spreadsheets and databases. We will explain in straightforward terms the concepts underlying www, spreadsheets and databases and their advantages so that students can exploit them effectively. Besides lectures, this course will have weekly labs. The labs will help you to put into practice the knowledge acquired from lectures; ultimately leading to the outcome that you will be able to develop web, spreadsheet and database applications.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "",
+        "prereqs": []
+    },
+    "COMP1521": {
+        "offering_time": "T2",
+        "name": "Computer Systems Fundamentals",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP1521/19T2/outline",
+        "outline": "This course introduces students to\nhow computer systems are structured\nin terms of basic electronic components,\nhow they are used to implement procedural programs,\nand how they are structured\nas a collection of software layers.\nIt introduces students to\nlow-level software layers such as\noperating systems and network infrastructure,\nand introduces concurrency concepts.\nThe goal is to give students\na solid understanding of what happens\nwhen high-level programs are executed,\nas a basis for further study\nin important areas of computing\nsuch as computer architecture,\noperating systems, and networks.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP1511 or DPST1091 or COMP1911 or COMP1917",
+        "prereqs": [
+            "OR",
+            {
+                "COMP1911": ""
+            },
+            {
+                "COMP1511": ""
+            }
+        ]
+    },
+    "COMP2041": {
+        "offering_time": "T2",
+        "name": "Software Construction",
+        "url": "https://cgi.cse.unsw.edu.au/~cs2041/19T2/resources/outline.html",
+        "outline": "By the end of the course, you should have these attributes which will be useful to you for the remainder of your studies and after graduation:\nhave practical experience in programming with the Unix shell, Perl and JavaScript\nhave a broader & deeper knowledge of building software systems\nmore appreciation of the use of specific technologies and strategies during software development\nexposure to tools for version control, performance improvement, configuration and debugging\nimprovement of your ability to articulate & communicate concepts related to programming & systems",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP1511 OR DPST1091 OR COMP1917 OR COMP1921",
+        "prereqs": {
+            "COMP1511": ""
+        }
+    },
+    "COMP2511": {
+        "offering_time": "T2",
+        "name": "O-O Design & Programming",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP2511/19T3/outline",
+        "outline": "COMP 2511 covers the theory and practice of object-oriented design and programming with an emphasis on teaching students how to apply software design principles and design patterns to the building of flexible, reusable and maintainable systems. The course also introduces user-interface design and programming and includes the implementation of a large project done in pairs using agile software practices and enables students to have hands-on experience in applying the principles taught, implementing and incorporating the use of good design principles and design patterns in software programs",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP1531 AND (COMP2521 OR COMP1927)",
+        "prereqs": [
+            "AND",
+            {
+                "COMP2521": ""
+            },
+            {
+                "COMP1531": ""
+            }
+        ]
+    },
+    "COMP3141": {
+        "offering_time": "T2",
+        "name": "Software Sys Des&Implementat'n",
+        "url": "http://www.cse.unsw.edu.au/~cs3141/19t2/outline.html",
+        "outline": "This course presents a variety of programming techniques that make use of semi-formal and formal methods for the design and implementation phases of real-world software system development. It introduces approaches to testing informed by formal designs, and it discusses trade-offs between static and dynamic approaches to improving software correctness. Throughout the course, the discussed methods are supported by software tools that assist in managing design, implementation, and testing. The course content is illustrated by weekly programming case studies and regular practical exercises. Central topics are the use of functional programming, logical properties and types to inform program design, implementation, validation, and verification. The course will introduces students to the strongly-typed Haskell programming language. No previous knowledge of Haskell is assumed.\n\nAs with any course which teaches a potentially unfamiliar language, this course involves a significant amount of programming, both during and outside of lectures.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP1927 or COMP2521",
+        "prereqs": {
+            "COMP2521": ""
+        }
+    },
+    "COMP3151": {
+        "offering_time": "T2",
+        "name": "Foundations of Concurrency",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3151/19T2/outline",
+        "outline": "In this course you will learn about the foundational concepts of concurrent programs (including multi-threaded, parallel, and distributed programs) and the crucial abstractions used to implement or understand behaviour of concurrent programs. Classical problems arising in concurrent programs will be examined and solutions to these problems will be analysed. Practical work will include proofs of program properties, plus some programming in a concurrent programming language (Java or a suitable alternative) with simultaneous model checking.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP1927 OR (COMP1521/DPST1092 AND COMP2521)",
+        "prereqs": [
+            "AND",
+            {
+                "COMP2521": ""
+            },
+            {
+                "COMP1521": ""
+            }
+        ]
+    },
+    "COMP3421": {
+        "offering_time": "T2",
+        "name": "Computer Graphics",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3421/19T2/outline",
+        "outline": "This course teaches the fundamental algorithms underlying computer graphics in both 2D and 3D. It introduces students to an industry standard graphics API (OpenGL) and gives them experience developing graphical applications.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP2511 or COMP2911",
+        "prereqs": {
+            "COMP2511": ""
+        }
+    },
+    "COMP3821": {
+        "offering_time": "T2",
+        "name": "Ext Algorithms&Prog Techniques",
+        "url": "https://cgi.cse.unsw.edu.au/~cs3121/extended.php",
+        "outline": "",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "A mark of at least 65 in COMP1927 or COMP2521",
+        "prereqs": {
+            "COMP2521": ""
+        }
+    },
+    "COMP4336": {
+        "offering_time": "T2",
+        "name": "Mobile Data Networking",
+        "url": "",
+        "outline": "",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP3331.",
+        "prereqs": {
+            "COMP3331": ""
+        }
+    },
+    "COMP4511": {
+        "offering_time": "T2",
+        "name": "User Interface Design & Constr",
+        "url": "https://www.cse.unsw.edu.au/~cs4511/csedocs/CourseOutline2018.pdf",
+        "outline": "This is a project-based course, the project will run for the duration of the semester\nand will make up your final course mark. Checkpoints throughout the semester will\nensure that you are meeting the deadlines and proceeding adequately through the\nproject lifecycle.\n\u2022 Lecture topics are summarised in the Course Schedule below.\n\u2022 The course includes topics relating to Requirements, Design, Prototyping and\nEvaluation within the User Centred Design process.\n\u2022 It is assumed knowledge that you are already able to conduct basic usability\nevaluations (based on the skills acquired in COMP3511/9511)\n\u2022 This course will take you through a basic cycle of Paper Prototype, Electronic\nPrototype and Beta version of an app\n\u2022 We will be using XCode as our programming environment, and Swift as the\nlanguage.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "a mark of at least 70 in COMP9511 and a mark of at least 65 in COMP9021",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9021": ""
+            },
+            {
+                "COMP9511": ""
+            }
+        ]
+    },
+    "COMP4952": {
+        "offering_time": "T2",
+        "name": "Research Thesis B",
+        "url": "",
+        "outline": "",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "Completion of Research Thesis A (4951)",
+        "prereqs": {
+            "COMP4951": ""
+        }
+    },
+    "COMP4953": {
+        "offering_time": "T2",
+        "name": "Research Thesis C",
+        "url": "",
+        "outline": "",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "Completion of Research Thesis B (4952)",
+        "prereqs": {
+            "COMP4952": ""
+        }
+    },
+    "COMP6441": {
+        "offering_time": "T2",
+        "name": "Security Engineering",
+        "url": "",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "",
+        "prereqs": []
+    },
+    "COMP6447": {
+        "offering_time": "T2",
+        "name": "Security Assessment",
+        "url": "https://www.cse.unsw.edu.au/~cs6447/19T2/COMP%5b69%5d447_Course_Outline(1).pdf",
+        "outline": "This course looks at cyber attack and defence. Students learn how to assess and identify\nvulnerabilities and how vulnerabilities are exploited. Students learn the principles and theory of\nexploitation, the common security models, and how approaches to exploitation and defence\nhave evolved over time.\nStudents from this course will engage in wargame competitions, analyse real world case studies\nof vulnerabilities in complex software used on widespread systems, and gain an understanding\nof the technical process of finding and fixing low-level software vulnerabilities and also of the\neconomics and causal factors involved with their real world use.\nThe course covers techniques and skills including vulnerability classes, source code auditing,\nfuzzing, security bugs, software security assurance, taint analysis, memory corruption, overflows\nand return oriented programming . The course coverage will be constantly updated over time to\nreflect emerging attack and defence methods.\nThere are numerous formative assessments and activities throughout the course to provide\nfeedback and learning opportunities.\nStudents need a keen, devious and analytical mind. Binary exploits = hardcore.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "A mark of at least 65 in COMP6841, or a mark of at least 75 in COMP6441 or COMP9441",
+        "prereqs": [
+            "OR", [
+                "OR",
+                {
+                    "COMP9441": ""
+                },
+                {
+                    "COMP6441": ""
+                }
+            ],
+            {
+                "COMP6841": ""
+            }
+        ]
+    },
+    "COMP6721": {
+        "offering_time": "T2",
+        "name": "(In-)Formal Methods",
+        "url": "http://www.cse.unsw.edu.au/~cs6721/",
+        "outline": "This Course Aims to expose its students to the large conceptual resource of essentially logical and mathematical material underlying the construction of correct, usable and reliable software. Much of this has been \u201clost\u201d in the sense that it is taught either as hard-core theory (with the expected effect on its popularity) or \u2013worse\u2013 not taught at all. Thus there will be three main threads running through the course: (1) how to think about (correctness of) programs; (2) case studies of how others have done so; and (3) what are the supporting theories, and where would further study of them lead.\n\nFor (1) the main theme will be the use of static rather than operational reasoning, that is thinking about what is true at various points in a program rather than on what the program \u201cdoes\u201d as its control moves from one point to another. This is harder than it sounds, and it takes lots of practice.\nThe principal tools, for conventional programs, are assertions, invariants and variants. (Google for them.) Usually these are presented with an emphasis on formal predicate calculus, and precise step-by-step logical reasoning. But we instead we will be using them informally, writing our invariants etc. in English and seeing how that affects the way we program and the confidence we have in the result. Further tools are abstraction, refinement, data refinement and program algebra: these techniques are used to transform one program into another one that is just as correct as the first one was, but is (for example) more efficient or more easily implemented on the platform available.\n\nFor (2), the programs we study will be chosen to help us put the ideas of (1) into practice, as they do need lots of practice. Usually the general idea of what the program needs to do will be obvious, but making sure that it works in all cases will seem (at first) to be an almost impossible goal. One\u2019s initial approach is, all too often, simply to try harder to examine every single case; and \u201csuccess\u201d might then be equated with exhaustion of the programmer rather than exhaustion of the cases.\nOur alternative approach to \u201cimpossible\u201d programs will be to try harder to find the right way to think about the problem they are solving \u2014 often the obvious way is not the best way. But getting past the obvious can be painful, and exhausting, though it is rewarding in the end: a crucial advantage of succeeding in this way is that the outcome \u2013the correctness argument\u2013 is concrete, durable and can be communicated to others (e.g. to yourself in six months\u2019 time). Further, the program is much more likely to be correct. And \u2013finally\u2013 it is fun, and extremely satisfying.\n\nIn (3) we recognise that the above (intellectual) tools all have mathematical theories that underlie them; but we will not study those theories for their own sake. Rather we will look into the theories \u2013with a light touch\u2013 to see the way in which they influence the practical methods they support. The theories include program semantics, structured domains, homorphisms, testing and compositionality and finally refinement.\nAt the end there will be a brief look at some new theories behind security, and random algorithms, concentrating on how the main ideas of the course continue to apply. But they will have to be adapted in interesting ways.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9020 and COMP9024",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9024": ""
+            },
+            {
+                "COMP9020": ""
+            }
+        ]
+    },
+    "COMP6752": {
+        "offering_time": "T2",
+        "name": "Modelling Concurrent Systems",
+        "url": "http://www.cse.unsw.edu.au/~rvg/6752/",
+        "outline": "This course tries to make students familiar with state-of-the-art techniques in modelling concurrent systems. This is done by comparing some of the more successful semantic models of concurrency found in the literature. The focus will be on the rationale behind the design decisions underlying those models, viewed from philosophical, mathematical and computational perspectives. The course contains important background knowledge for students aiming at a scientific career in which the design of mathematical models of system behaviour is a component.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9020",
+        "prereqs": {
+            "COMP9020": ""
+        }
+    },
+    "COMP6771": {
+        "offering_time": "T2",
+        "name": "Advanced C++ Programming",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP6771/19T2/outline",
+        "outline": "COMP6771 is an advanced programming course teaching practical aspects of intermediate/advanced C++ programming. The course focuses on teaching the fundamentals of C++, followed by exploring powerful abstractions that C++ enables. This course focuses on using abstractions as well as building abstractions.COMP6771 is focused on modern, practical programming methods and tools. This course is designed for latter year CSE students with a reasonable degree of programming competencies.The course is heavily supported byChristopher Di Bella, a UNSW CSE graduate who is a well regarded expert on C++. His knowledge and expertise assists in forming and updating the course.Our aim for students who complete this course satisfactorily is that they are highly competent in understanding C++ and it's core features, being able to build complex programs, data structures, and algorithms with C++, and being ready to immediately move into the workforce in areas that rely heavily on C++.COMP6771 can be a challenging course for students due to the volume of work to complete in a 10 week period.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024.",
+        "prereqs": {
+            "COMP9024": ""
+        }
+    },
+    "COMP6841": {
+        "offering_time": "T2",
+        "name": "Extended Security Engineering",
+        "url": "",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024.",
+        "prereqs": {
+            "COMP9024": ""
+        }
+    },
+    "COMP9044": {
+        "offering_time": "T2",
+        "name": "Software Construction",
+        "url": "https://cgi.cse.unsw.edu.au/~cs2041/19T2/resources/outline.html",
+        "outline": "By the end of the course, you should have these attributes which will be useful to you for the remainder of your studies and after graduation:\nhave practical experience in programming with the Unix shell, Perl and JavaScript\nhave a broader & deeper knowledge of building software systems\nmore appreciation of the use of specific technologies and strategies during software development\nexposure to tools for version control, performance improvement, configuration and debugging\nimprovement of your ability to articulate & communicate concepts related to programming & systems",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9021",
+        "prereqs": {
+            "COMP9021": ""
+        }
+    },
+    "COMP9154": {
+        "offering_time": "T2",
+        "name": "Foundations of Concurrency",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3151/19T2/outline",
+        "outline": "In this course you will learn about the foundational concepts of concurrent programs (including multi-threaded, parallel, and distributed programs) and the crucial abstractions used to implement or understand behaviour of concurrent programs. Classical problems arising in concurrent programs will be examined and solutions to these problems will be analysed. Practical work will include proofs of program properties, plus some programming in a concurrent programming language (Java or a suitable alternative) with simultaneous model checking.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024.",
+        "prereqs": {
+            "COMP9024": ""
+        }
+    },
+    "COMP9242": {
+        "offering_time": "T2",
+        "name": "Advanced Operating Systems",
+        "url": "https://www.cse.unsw.edu.au/~cs9242/19/outline.shtml",
+        "outline": "To provide students with a deep understanding of modern operating\nsystem technology, implementation techniques and research issues.Our approach to achieving this goal is to expose students to advanced\ntopics in operating systems via interactive lectures that examine\nspecialist topics, and selected research papers and their\nresults. Further, students undertake a substantial practical project\nwhere they apply their skills to advanced operating system\nconstruction. Together, both components give students an advanced\ntheoretical foundation in operating systems, that is re-enforced\nthrough practical application.This course builds upon the basic operating systems course\n(COMP3231/9201/3891/9283), which provides an understanding of the\nunderlying operating systems which students have implicitly relied\nupon in developing applications in foundational courses within\nComputer Science and Engineering, and will rely on in their future\ncareers when developing systems and applications. Advanced operating\nsystems enables students to specialise in operating systems, giving\nthem the background to become operating systems or embedded-systems\ndevelopers or researchers, either\nthemselves or as part of a team.This course contributes to the the students graduate attributes in\nthe following ways:The challenging project enables student to further develop the\nanalytical skills required to manage system complexity, creative\nproblem solving, and engages student in collaborative and in-depth\napplication of their operating system skills.Regular project demonstrations improve technical communication\nskills.Interactive examination during lectures of relevant research in\nthe field develops critical thinking, and engages students in examples\nof scholarly enquiry.The project also requires students to develop their skills in\nlocating the relevant information required complete the project,\nevaluate the information's relevance to the project, and when\nrequired, digest and apply the information, and self-evaluate their\nown understanding of the material.OBJECTIVESTechnicalProvide in-depth coverage of modern operating system issues, such as:microkernels and IPC,user-level OS servers,design and implementation of microkernel-based systems,performance,kernel design and implementation,device drivers,virtualisation and hypervisors,scheduling for real-time,symmetric multiprocessing and hardware multithreading,effects and control of hardware caches,protection and security models,OS designs and resulting issues,hot topics.EducationalExposing students to current operating systems research and modern\nOS technology.Providing insight in the design principles of very fast kernels.Providing experience in low-level systems programming in a\nrealistic development environment.Providing experience in reading and evaluating research papers.Encouraging interest in further study and research in the area.ProfessionalWorking in an environment and on problems similar to a\nprofessional OS or embedded systems engineer in industry.Designing, implementing and debugging a whole system almost from the hardware up.Learning to cope with system complexity.Understanding\nlowest-level OS code and its interaction with hardware.LEARNING OUTCOMESOn successfully completing the course, students should be capable of:Developing low-level operating system code.Understanding the performance trade-offs in developing\n  high-performance low-level OS code. Specifically:The influence of cache architecture on OS design.The influence of cache coherence models and multicore on OS\n      and sync primitive design and implementation.The influence of execution models on complexity and\n    performance of OS code.Understanding and be capable of developing OS code inside a\n    variety of OS environments, including monolithic, microkernels, and\n    virtual machines, including device drivers.Developing benchmarks to evaluate the performance of OSs and\n  application stacks.Understanding and of evaluating research\n    published in the field of operating system at a level commensurate\n    with their experience.PREREQUISITESGeneralStudents are expected to be highly competent in programming in\nC. Students not familiar with C will be expected to learn it on their\nown (very quickly!)Students are expected to be familiar with assembly\nlanguage programming. The project will not require assembly\nprogramming, but for debugging and understanding of calling conventions\nthis knowledge is required. Furthermore, the lectures will examine\nlow-level kernel code, some of which is written in assembler.Students are expected to be familiar with basic computer architecture\nconcepts and the main characteristics of a modern RISC processor. The\nproject will use anOdroid-C2computer based on the Amlogic S905 SoC containing a quad-core\nCortex-A53 64-bit CPU (ARMv8 ISA).Course Prerequisitesadistinctiongrade inCOMP3231/COMP3891/COMP9201/COMP9283 (Extended) Operating Systems(pre-requisite)CONSTITUENTSLecturesA rough outline of the lectures is (subject to change):Introduction and OverviewIntroduction to the seL4 MicrokernelseL4 system calls, library API and usage (to get you started on the project)Microkernels and User-level ServersHistory and\nmotivation for microkernel systems, Hydra, Mach, discussion,\nexperiences; second-generation microkernel systems;\ndesign and implementation of microkernel-based systems, including\nuser-level page fault handling and device driversMicrokernel ConstructionA detailed look at the design and internals of a real secure and\nhigh-performance microkernel.A close look at selected OS issuesCaching, and its implications for OSEvents vs threadsOS securityVirtual machinesOS research projects at UNSW/Data61Other topics (as time allows)Candidates areComparison of OS designs (L4, Linux, Darwin, Windows)Real-time issuesSMP/SMT issues: locking, cache coherence, schedulingReliable device driversFile systemsHot topicsLaboratories/ProjectLab work forms a major component of the course. This will be carried\nout using a take-home hardware kit that can be used in any of the\nSchool's Linux labs, or on students own machines.In the first lecture, students will be provided with theirOdroid-C2lab kits.The Odroids runseL4, a third-generation microkernel developed from scratch\n  byKevin\n  Elphinstoneand his team, part of theTrustworthy Systemsgroup\n  atData61(formerly NICTA). The kernel is the latest\n  in a series of L4 microkernels designed\n  atKarlsruhe, UNSW and Data61, and has\n  some revolutionary properties which will be disused in class. Most\n  famously, it is the world's first (and so far only) OS kernel with a\n  formalproof\n  of functional correctness; this was done by the ERTOS\n  team under the lead\n  ofGerwin Klein.\n  The ERTOS engineers and research students are mostly alumni of this\n  course.The Odroids connect to Linux hosts running an L4 development\nenvironment. OS code is developed and compiled there and then\ndownloaded to the Odroid, which present a minimum environment ideally\nsuited for low-level systems programming exercises.  Documentation as\nwell as sample code will be provided.After some ``warm-up'' experiments students will work in groups of two\non a project, which constructs various OS components, with the\nultimate aim of producing a small (and very efficient) operating\nsystem. A series of milestones are defined to aid the implementation.Milestones and the final project will be demonstrated to School staff\nand the code submitted for assessment. Complete system documentation\nwill form the final deliverable.Milestones must be demonstrated at a consultation time in the week\nfollowing the week that the milestone is due. Both partners must be\npresent and participate in milestone demonstrations as milestone\ndemonstrations are assessed individually. Milestone deadlines missed\nby no more than one week will cause a loss of 20% of the mark for that\nparticular milestone, if missed by more that one week the penalty is\n40%, up to a maximum of two weeks.No submissions/demos will be accepted later than\ntwo weeks after the deadline.\nFurthermore,students will not be allowed to\ncontinue with the course unless they have given a satisfactory\ndemonstration of the first two milestones\n(m0andm1) within one week of the respective due\ndate!Alternative projects may be given to some students by special\narrangements. The main criteria for this is that the project is at\nleast as challenging as the standard project, and that I am convinced\nthat the student(s) are up to it.CheatingMisconduct and plagiarism in any form will be dealt with consistent\n  with CSE and University policies (seehttp://webapps.cse.unsw.edu.au/cse/student-conduct.html).Final ExamThere will be a final exam, in the form of a24h\ntake-home. Students will be given one day to read and analysetworecent research papers relevant to the material covered in\nthe course, and submit a critical report on it. See theprevious years' examsfor examples.Supplementary assessmentsSupplementary exams will only be awarded in well justified cases, in\naccordance with School policy,notas a second chance for\npoorly performing students. In particular, it is highly unlikely that\na supplementary will be awarded to students who have actually\nsubmitted an exam.Make up your mind whether or not you are sick\nbefore submitting!Supplementary exams will either have the same format as the normal\nexam, or, at the discretion of the LiC, will be orals. They\nwill probably be held on the day after the written supplementary exams\nheld for other courses.ConsultationsSee theconsultation schedule.ASSESSMENTThe project is the heart of this course, which is all about learning\nabout OS design and implementation \u201chands on\u201d. It will\ndominate the workload for the course, and will develop valuable and\nhighly-sought-after systems skills in students. Consequently, the\nproject is the dominating assessment component. The project work\ncounts for 65% of the final mark.Students must\ncontributeequallyto the project work.In the case of\nsignificantly unequal contributions, the marks of the lesser\ncontributor will be reduced.The exam contributes 35% of the final mark.A minimum mark of 14\n(i.e., 40% of the maximum) is required in the exam to receive a\npassing grade.This is to ensure that no-one can pass the course\non project work alone.OTHER ADMINSTRATIVE INFOSurveysWe conduct a detailed on-line survey at the end of each session, in\norder to identify any shortcomings of the course. This has in the\npast helped to maintain and improve the quality of the course.In order to emphasise that we take student comments very seriously, wepublish all surveys uncensored, with the\npossible exception of removing statements other people could find\nupsetting (the LiC isn't easily insulted ;-). In some cases they are\naccompanied by comments by the LiC.Parallel TeachingN/ACredit ValueCOMP9242 is weighted at 6 UoC.Yellow FormExpectations and responsibilities of students, OH&S and equity and\ndiversity issues are covered in the School'sYellow\nFormwhich every student needs to sign.TEXT and REFERENCE BOOKSTextbookThere is no textbook for this course, as no published book covers the\nmaterial in sufficient depth. Lecture slides and plenty of handouts\nwill be provided.Reference BooksRobert Love:Linux Kernel Development, 3rd editionA. Tanenbaum, A. Woodhull: Operating Systems: Design and\nImplementation, 2nded. 1997, Prentice Hall.Curt Schimmel: UNIX Systems for Modern Architectures, 1994, Addison\nWesley.M. Beck, H. B\u00f6hme, M. Dziadzka, U. Kunitz, R. Magnus, and\nD. Verworner: Linux Kernel Internals, 1997, Addison\nWesley.Marshall K. McKusick, Keith Bostic,  Michael J. Karels,  John\nS. Quarterman: The Design and Implementation of the 4.4BSD Operating\nSystem, 1996, Addison Wesley.Helen Custer: Inside Windows NT, 1993, Microsoft\nPress.2ndversion authored by David A. Solomon,\n(1998), 3rdversion authored by David A. Solomon and Mark\nRussinovich titled ``Inside Windows-2000'' (2000).Helen Custer: Inside the  Windows NT File System, 1994, Microsoft\nPress.Scott Maxwell: Linux Core Kernel Commentary, 1999, CoriolisOpen Press.John Lions: Commentary on UNIX 6thedition with source\ncode, 1996, Peer-to-Peer Communications. (The famous Lions Book,\nidentical to the 1977 UNSW TR.)Selected research papers as referred to in class.Source code.Reference manuals for labsThe menu bar on the left provides links to all relevant documentation\nfor hardware and software.Other materialLecture slides and other information can be\nfound under the course's WWW home page at URLhttp://www.cse.unsw.edu.au/~cs9242/.STAFFINGLecturer-in-charge isKevin\n       Elphinstone. He andGernot Heiserwill\ndeliver most of the lectures.\nSome lectures will be delivered by other local researchers, visitors or research students.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "a mark of at least 75 in either COMP9201 or COMP9283.",
+        "prereqs": [
+            "OR",
+            {
+                "COMP9283": ""
+            },
+            {
+                "COMP9201": ""
+            }
+        ]
+    },
+    "COMP9301": {
+        "offering_time": "T2",
+        "name": "Cyber Security Project",
+        "url": "",
+        "outline": "",
+        "grad_level": "postgraduate    (COMP6441 OR COMP6841) AND (6 UOC from  (COMP6443, COMP6843, COMP6445, COMP6845, COMP6447)) AND enrolled in final term of program",
+        "handbook_prereqs": "O COMP6441 O COMP6841 O COMP6443 O COMP6843 O COMP6445 O COMP6845 COMP6447",
+        "prereqs": []
+    },
+    "COMP9302": {
+        "offering_time": "T2",
+        "name": "Cyber Security Project B",
+        "url": "",
+        "outline": "",
+        "grad_level": "postgraduate    (COMP6441 OR COMP6841) AND (12 UOC from (COMP6443, COMP6843, COMP6445, COMP6845, COMP6447)) AND enrolled in final term of program",
+        "handbook_prereqs": "O COMP6441 O COMP6841 O COMP6443 O COMP6843 O COMP6445 O COMP6845 COMP6447",
+        "prereqs": []
+    },
+    "COMP9313": {
+        "offering_time": "T2",
+        "name": "Big Data Management",
+        "url": "https://webcms3.cse.unsw.edu.au/static/uploads/course/COMP9313/19T2/45d97e095ed0ec82f8a4e1dbf149cf7917e34668ef062e87b12e3a0a94258f9d/Course-Outline.pdf",
+        "outline": "This course introduces the core concepts and technologies involved in managing Big\nData. It will first introduce the characteristics of big data and big data analysis. Then,\nwe will present key management aspects in the context of big data projects. Next, we\nwill learn the open-source big data management framework Hadoop. The course will\nintroduce the overall framework and then focus on Hadoop MapReduce and its\nprogramming model. In this course, we will also introduce Spark, an open-source and\nmemory-based distributed computing framework. In addition, we will also introduce\nexamples of major NoSQL technologies currently widely used in the big data\nmanagement ecosystem.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024 and COMP9311",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9311": ""
+            },
+            {
+                "COMP9024": ""
+            }
+        ]
+    },
+    "COMP9315": {
+        "offering_time": "T2",
+        "name": "Database Systems Implementat'n",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9315/19T2/outline",
+        "outline": "This course aims to introduce students to the detailed internal structure of database management systems (DBMSs) such as Oracle or SQL Server. DBMSs contain a variety of interesting data structures and algorithms that are also potentially useful outside the DBMS context; knowing about them is a useful way of extending your general programming background.  While the focus is on relational DBMSs, given that they have the best-developed technological foundation, we will also consider more recent developments in the management of large data repositories.Relational DBMSs need to deal with a variety of issues: storage structures and management, implementation of relational operations, query optimisation, transactions, concurrency, recovery, security. The course will address most of these, along with a brief look at emerging database systems trends. The level of detail on individual topics will vary; some will be covered in significant detail, others will be covered relatively briefly.An important aspect of this course is to give you a chance to undertake an in-depth exploration of the internals of arealDBMS: PostgreSQL. Lectures will discuss the general principles of how DBMSs are implemented, and will also illustrate them with examples from PostgreSQL where possible.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024 and COMP9311.",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9311": ""
+            },
+            {
+                "COMP9024": ""
+            }
+        ]
+    },
+    "COMP9319": {
+        "offering_time": "T2",
+        "name": "Web Data Compression & Search",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9319/19T2/outline",
+        "outline": "As the amount of Web data increases, it is becoming vital to not only be able to search and retrieve this information quickly, but also to store it in a compact manner. This is especially important for mobile devices which are becoming increasingly popular. Without loss of generality, within this course, we assume Web data (excluding media content) will be in XML and its like (e.g., XHTML).This course aims to introduce the concepts, theories, and algorithmic issues important to Web data compression and search. The course will also introduce the most recent development in various areas of Web data optimization topics, common practice, and its applications. The course is composed of the following parts:Adaptive coding, information theoryText compression (zip, gzip, bzip, etc)Burrows-Wheeler Transform and backward searchXML compressionIndexingPattern matching and regular expression searchDistributed queryingFast index constructionImplementationIf time allows, we may cover optional topics such as: streaming algorithms, text analytics, Web data optimization for mobile devices.The lecture materials will be complemented by two programming assignments and numerous tutorial exercises.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024.",
+        "prereqs": {
+            "COMP9024": ""
+        }
+    },
+    "COMP9332": {
+        "offering_time": "T2",
+        "name": "Network Routing and Switching",
+        "url": "http://www.cse.unsw.edu.au/~cs9332/outline18s1.html",
+        "outline": "This course will focus on the routing and switching architectures, algorithms, and protocols for packet switching networks with an emphasis on the Internet or Internet Protocol (IP) based networks. Routing techniques for both traditional wired networks, and the emerging wireless and mobile networks will be examined. The course will teach the fundamental routing concepts using open standards, such as BGP and OSPF. Configuring vendor specific products is outside the scope of this course.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9331.",
+        "prereqs": {
+            "COMP9331": ""
+        }
+    },
+    "COMP9336": {
+        "offering_time": "T2",
+        "name": "Mobile Data Networking",
+        "url": "",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9331.",
+        "prereqs": {
+            "COMP9331": ""
+        }
+    },
+    "COMP9415": {
+        "offering_time": "T2",
+        "name": "Computer Graphics",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3421/19T2/outline",
+        "outline": "This course teaches the fundamental algorithms underlying computer graphics in both 2D and 3D. It introduces students to an industry standard graphics API (OpenGL) and gives them experience developing graphical applications.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024.",
+        "prereqs": {
+            "COMP9024": ""
+        }
+    },
+    "COMP9417": {
+        "offering_time": "T2",
+        "name": "Machine Learning & Data Mining",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9417/19T2/outline",
+        "outline": "This course explores machine learning as the algorithmic approach to learning from data. The course also covers key aspects of data mining, which is understood as the application of machine learning tools to obtain insight from data. Algorithms are placed in the context of their theoretical foundations in order to understand their derivation and correct application. Topics include: linear models for regression and classification, local methods (nearest neighbour), neural networks, tree learning, kernel machines, unsupervised learning, ensemble learning, computational and statistical learning theory, and Bayesian learning. To expand and extend the development of theory and algorithms presented in lectures, practical applications will be given in tutorials and programming tasks during the project.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9020 and COMP9024",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9024": ""
+            },
+            {
+                "COMP9020": ""
+            }
+        ]
+    },
+    "COMP9517": {
+        "offering_time": "T2",
+        "name": "Computer Vision",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9517/19T3/outline",
+        "outline": "The course will cover topics from: Introduction, image processing, feature detection, pattern recognition, deep learning  , segmentation, motion and image tracking, applications.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024.",
+        "prereqs": {
+            "COMP9024": ""
+        }
+    },
+    "COMP9801": {
+        "offering_time": "T2",
+        "name": "Ext Design&Analysis of Algo",
+        "url": "https://cgi.cse.unsw.edu.au/~cs3121/extended.php",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "a mark of at least 70 in COMP9024.",
+        "prereqs": {
+            "COMP9024": ""
+        }
+    },
+    "COMP1400": {
+        "offering_time": "T3",
+        "name": "Programming for Designers",
+        "url": "https://webcms3.cse.unsw.edu.au/static/uploads/course/COMP1400/18s2/e21a9db0fb5e62a0423b7df090da765e2da7cfa22895c180f31aad62d185144a/Comp1400-outline-2018.html",
+        "outline": "This course introduces you to the foundations of the programming discipline, which underlies most technical subjects such as software design, data management and algorithms. It will involve both a theoretical component (e.g. learning about basic programming concepts like loops, arrays and functions) as well as a practical component (e.g. implementing simple algorithms in a computer laboratory). The course also provides a first step towards learning the principles of object-oriented design and programming through the use of the Java programming language.The course is suitable for students with no prior programming experience. It is particularly targeted at IS students as it relates to a number of core concepts that are essential in understanding the technologies behind information systems in business without getting overmuch into low-level technical details.We will be using theJava programming languageand theBlueJenvironment for learning.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "Enrolment in a non-CSE major (no BINF, COMP, or SENG)",
+        "prereqs": {}
+    },
+    "COMP3161": {
+        "offering_time": "T3",
+        "name": "Concepts of Programming Lang.",
+        "url": "http://www.cse.unsw.edu.au/~cs3161/19t3/outline.html",
+        "outline": "This course discusses and relates a range of programming language concepts and paradigms, including imperative, object-oriented, functional, concurrent & parallel programming. It covers the theoretical foundations (syntax, operatational, axiomatic and denotational semantics) as well as practical development and implementation aspects (dynamic and strong typing, polymorphism, overloading, automatic memory management, and multicore parallelism). Due to the course topic, a variety of programming languages will be studied and used. Assignments will be in the programming language Haskell, but no previous knowledge of Haskell is assumed.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP2521 or COMP1927",
+        "prereqs": {
+            "COMP2521": ""
+        }
+    },
+    "COMP3222": {
+        "offering_time": "T3",
+        "name": "Digital Circuits and Systems",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3222/19T3/outline",
+        "outline": "This course teaches students the fundamentals of digital design.The course introduces the components of digital systems, explains how these are described in the VHDL hardware description language and familiarizes the student with the implementation of digital circuits using FPGA prototyping boards.Students are expected to attend lectures, tutorials and laboratories.Students are assessed via the completion of lab exercises, a class test and final theoretical and practical exams.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP2121 OR COMP1521 OR DPST1092",
+        "prereqs": [
+            "OR",
+            {
+                "COMP1521": ""
+            },
+            {
+                "COMP2121": ""
+            }
+        ]
+    },
+    "COMP3431": {
+        "offering_time": "T3",
+        "name": "Robotic Software Architecture",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3431/19T3/outline",
+        "outline": "This course gives both a theoretical and a practical introduction to the control of robotic systems. The course is in two parts:An overview of robot software architectures:This part of the course gives students an introduction to the structure of robot software, including the theory of decision making: How can an agent build up knowledge of its world? Having done that, how can an agent choose its actions? A variety of different decision making and planning architectures are covered; including classical planning, reinforcement learning and cognitive architectures. In labs, students will get hands on experience with some of these planning systems.Practical RoboticsThis part of the course gives students a practical introduction to some specific robot architectures; the main system architecture will be the Robot Operating System,ROS. We will be usingTurtleBot3 WaffleRobots, or other robots as available.At the end of this course, students should have:experience with the details of one robot architecture,an overview of a range of other architectures and decision making systems,an understanding of the practicalities of programming physical robots as opposed to purely software systems,an understanding of a robot as a complete system, as well as its component parts.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP2521 or COMP1927, and a WAM of at least 70",
+        "prereqs": {
+            "COMP2521": ""
+        }
+    },
+    "COMP3601": {
+        "offering_time": "T3",
+        "name": "Design Project A",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3601/19T3/outline",
+        "outline": "This course aims to teach students how to design real world hardware/software co-design projects. Throughout the course of the semester, students will work in groups to achieve a complicated design using and FPGA and external hardware connected to a PC. At the beginning of the course, students will be assigned to a group and given a design task. Several required parameters for the task, including a budget, will be provided to students. This course builds upon the skills you have learnt in other courses, such as COMP2121, COMP3222, electrical engineering and software design courses to complete a large project through group participation.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP2121 OR DESN2000",
+        "prereqs": {
+            "COMP2121": ""
+        }
+    },
+    "COMP4121": {
+        "offering_time": "T3",
+        "name": "Advanced & Parallel Algorithms",
+        "url": "http://www.cse.unsw.edu.au/~cs4121/",
+        "outline": "This course is a continuation of our introductory algorithms courses COMP3121/3821/9101/9801. We will cover some of the basic randomised algorithms and data structures, such as randomised hashing, skip-lists, order statistics and Karger's randomised Min Cut algorithm. We will then look at the Markov chains and the Google PageRank algorithm, the Hidden Markov Models and the Viterbi Algorithm, and then cover in quite a detail a variety of other algorithms important to the present day practice, such as the recommender systems as well as some of the algorithms used in Data Science. We will cover parts of three books: our COMP3121/3821/9101/9801 textbook Algorithm Design by Kleinberg and Tardosh, Networked Life by Mung Chiang and Foundations of Data Science by Blum, Hopcroft and Kannan. The first two books are available in the bookstore. A preprint of the third book is available for free at https://www.cs.cornell.edu/jeh/book.pdf",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9101 or COMP9801.",
+        "prereqs": [
+            "OR",
+            {
+                "COMP9801": ""
+            },
+            {
+                "COMP9101": ""
+            }
+        ]
+    },
+    "COMP4128": {
+        "offering_time": "T3",
+        "name": "Programming Challenges",
+        "url": "http://www.cse.unsw.edu.au/~cs4128/19t3/outline/",
+        "outline": "IntroductionData StructuresGraphsDynamic ProgrammingNetwork FlowStringsMathematicsComputational GeometryThere is a tentative course schedule below.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "COMP3821, or (COMP3121 and a 75WAM)",
+        "prereqs": [
+            "OR",
+            {
+                "COMP3121": ""
+            },
+            {
+                "COMP3821": ""
+            }
+        ]
+    },
+    "COMP4161": {
+        "offering_time": "T3",
+        "name": "Advanced Verification",
+        "url": "https://www.cse.unsw.edu.au/~cs4161/outline.html",
+        "outline": "To educate students in advanced topics in software verification. Topics include higher order logic, natural deduction, lambda calculus, term rewriting, data types and recursive functions, induction principles, calculational reasoning, mathematical proofs, decision procedures for a variety of logical domains, and proofs about programs.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "Completion of 48 UOC",
+        "prereqs": {}
+    },
+    "COMP4418": {
+        "offering_time": "T3",
+        "name": "Knowledge Representation",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP4418/19T3/outline",
+        "outline": "Knowledge Representation and Reasoning (KRR) is at the core of Artificial Intelligence. It is concerned with the representation of knowledge in symbolic form and the use of this knowledge for reasoning. This course presents current trends and research issues in Knowledge Representation and Reasoning (KRR). It enables students interested in Artificial Intelligence to deepen their knowledge in this important area and gives them a solid background for doing their own work/research in this area. The topics covered include: Commonsense reasoning, Propositional and First-order Logic, Answer set programming, Planning, Reasoning about action, Constraint programming.This course can be a starting point for further exploration of artificial intelligence. Further courses include COMP3431/COMP9431: Robotic Software Architecture, COMP9417: Machine Learning and Data Mining, COMP9444: Neural Networks and COMP9844: Extended Neural Networks.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9414 or COMP9814",
+        "prereqs": [
+            "OR",
+            {
+                "COMP9814": ""
+            },
+            {
+                "COMP9414": ""
+            }
+        ]
+    },
+    "COMP4920": {
+        "offering_time": "T3",
+        "name": "Management and Ethics",
+        "url": "https://www.cse.unsw.edu.au/~cs4920/",
+        "outline": "COMP4920/SENG4920 covers practical aspects of both software project management and professional issues and ethics, and as such is critical preparation for the workforce, in addition to being essential for accreditation of the Software Engineering, Computer Science, Computer Engineering and Bioinformatics degree programmes. Students enrolling should be in the final year of study or nearing completion of their computing degree.\n\nThere are two specific themes and objectives.\n\nSoftware Project Management. To gain practical experience in all phases of the planning and execution of a software project, including requirements scoping, software process methodology, project planning and scheduling, teamwork and communication, and risk and change management.\nProfessional Issues and Ethics. To appreciate the responsibilities of a professional software engineer and understand the ethical dimensions of the IT industry as applied to specific issues such as software quality, privacy and security, intellectual property and legal obligations of IT practitioners.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "(COMP2511 or COMP2911) and completion of 96 UOC in Computer Science.",
+        "prereqs": {
+            "COMP2511": ""
+        }
+    },
+    "COMP6445": {
+        "offering_time": "T3",
+        "name": "Digital Forensics",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP6445/19T3/outline",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP6441 or COMP6841 or COMP9441, and COMP9201 or COMP9283",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9201": ""
+            },
+            [
+                "OR", [
+                    "OR", [
+                        "OR",
+                        {
+                            "COMP9441": ""
+                        },
+                        {
+                            "COMP6841": ""
+                        }
+                    ],
+                    {
+                        "COMP6441": ""
+                    }
+                ],
+                {
+                    "COMP9283": ""
+                }
+            ]
+        ]
+    },
+    "COMP6714": {
+        "offering_time": "T3",
+        "name": "Info Retrieval and Web Search",
+        "url": "",
+        "outline": "",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9020 and COMP9024",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9024": ""
+            },
+            {
+                "COMP9020": ""
+            }
+        ]
+    },
+    "COMP6733": {
+        "offering_time": "T3",
+        "name": "Internet of Things",
+        "url": "https://www.cse.unsw.edu.au/~cs6733/outline.html",
+        "outline": "Students will learn the fundamental principles behind designing IoT.\n\n\n\nTopics include a selection from: IoT technology and services, IoT system architecture, Low Power communications (Bluetooth Low Energy and 6LoWPAN) and security issues, time synchronisation and localisation, sensor data smoothing and filtering, light-weight machine learning and data fusion, inertial sensing, activity recognition, biometric authentication and cloud services.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "65 WAM and COMP9331",
+        "prereqs": {
+            "COMP9331": ""
+        }
+    },
+    "COMP6741": {
+        "offering_time": "T3",
+        "name": "Parameterized & Exact Comp.",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP6741/19T3/outline",
+        "outline": "The course focuses on algorithms for exactly solving NP-hard computational problems. Since no polynomial time algorithm is known for any of these problems, the running time of the algorithms will have a super-polynomial dependence on the input size or some other parameter of the input.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9101 or COMP9801.",
+        "prereqs": [
+            "OR",
+            {
+                "COMP9801": ""
+            },
+            {
+                "COMP9101": ""
+            }
+        ]
+    },
+    "COMP6845": {
+        "offering_time": "T3",
+        "name": "Extended Digital Forensics",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP6445/18s2/outline",
+        "outline": "This is a specialist security course in Digital Forensics. Topics include principles of forensic analysis, forensics and the law, forensics on several types of infrastructure, management of forensic methodologies and various real life case studies of forensic analyses.Students of this course will apply forensic methods in controlled environments and gain an understanding of the technical process of uncovering hidden data and other metadata which may reveal user behaviour. Students will also develop skills in reporting their findings and evaluate the ethical consequences of their findings.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP6441 or COMP6841 or COMP9441, and COMP9201 or COMP9283",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9201": ""
+            },
+            [
+                "OR", [
+                    "OR", [
+                        "OR",
+                        {
+                            "COMP9441": ""
+                        },
+                        {
+                            "COMP6841": ""
+                        }
+                    ],
+                    {
+                        "COMP6441": ""
+                    }
+                ],
+                {
+                    "COMP9283": ""
+                }
+            ]
+        ]
+    },
+    "COMP9032": {
+        "offering_time": "T3",
+        "name": "Microprocessors & Interfacing",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9032/19T3/outline",
+        "outline": "This course is to introduce students to the basic concepts and structure of the microprocessor and microcontroller, and provide students with knowledge and skills for solving problems with microprocessor/microcontroller.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9021.",
+        "prereqs": [
+            "WITH",
+            {
+                "COMP9021": ""
+            }
+        ]
+    },
+    "COMP9164": {
+        "offering_time": "T3",
+        "name": "Concepts of Programming Lang.",
+        "url": "http://www.cse.unsw.edu.au/~cs3161/19t3/outline.html",
+        "outline": "This course discusses and relates a range of programming language concepts and paradigms, including imperative, object-oriented, functional, concurrent & parallel programming. It covers the theoretical foundations (syntax, operatational, axiomatic and denotational semantics) as well as practical development and implementation aspects (dynamic and strong typing, polymorphism, overloading, automatic memory management, and multicore parallelism). Due to the course topic, a variety of programming languages will be studied and used. Assignments will be in the programming language Haskell, but no previous knowledge of Haskell is assumed.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024.",
+        "prereqs": {
+            "COMP9024": ""
+        }
+    },
+    "COMP9222": {
+        "offering_time": "T3",
+        "name": "Digital Circuits and Systems",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3222/19T3/outline",
+        "outline": "This course teaches students the fundamentals of digital design.The course introduces the components of digital systems, explains how these are described in the VHDL hardware description language and familiarizes the student with the implementation of digital circuits using FPGA prototyping boards.Students are expected to attend lectures, tutorials and laboratories.Students are assessed via the completion of lab exercises, a class test and final theoretical and practical exams.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9032.",
+        "prereqs": {
+            "COMP9032": ""
+        }
+    },
+    "COMP9243": {
+        "offering_time": "T3",
+        "name": "Distributed Systems",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9243/19T3/outline",
+        "outline": "A distributed system is a computer system consisting of several independent computers, connected by a network, that can work together to perform a task or provide a service. Typical examples include: the World Wide Web, cloud computing, networked file systems, DNS, and massive multiprocessor supercomputers.In this course we aim to provide students with a deeper understanding of distributed systems. In particular we focus on the principles, techniques, and practices relevant to the design and implementation of such systems. The course takes a systems-oriented view of distributed systems, concentrating on infrastructure software and providing hands-on experience implementing distributed systems.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9201 or COMP9283, and COMP9331.",
+        "prereqs": [
+            "AND", [
+                "OR",
+                {
+                    "COMP9283": ""
+                },
+                {
+                    "COMP9201": ""
+                }
+            ],
+            {
+                "COMP9331": ""
+            }
+        ]
+    },
+    "COMP9323": {
+        "offering_time": "T3",
+        "name": "e-Enterprise Project",
+        "url": "https://webcms3.cse.unsw.edu.au/static/uploads/course/COMP9323/19T3/e0c967290aa973cfd9614cdc8f71d1233a640838017d1119780ce7ac2615c5b6/COMP9323-2019-intro_.pdf",
+        "outline": "This course is the third instalment of the three-part series of the service-oriented systems\nengineering stream. It aims at allowing students to pursue a group-based and practical project\nrelated to the topics covered service oriented software engineering in an identified area of interests\nsuch as cognitive services (messaging bots), crowdsourcing, data analytics, Internet of Things.\nStudent groups will be supervised by a mentor throughout the project\ndesign/implementation/testing/demonstration. Student will be asked to participate in peer reviews\nfor the purpose of learning assessment processes in project-based learning and teaching. The\nproject demonstration will be exhibited to all members of the class at the end of the session.\nIn this course, we will follow a product-based framework to the project-based learning. Students\nare expected to engage themselves in research and self-study of the materials required for this\ncourse.\nThe main features of the course are:\n\u2022 Group-based project related to engineering service-oriented systems\n\u2022 Learning to develop complex systems through projects\n\u2022 Learning software as a service engineering methods\n\u2022 Projects may focus on an identified area of interests (e.g., messaging bots, \ncrowdsourcing, data analytics, Internet of Things)\n\u2022 Guest lectures on topics related to project-based software development",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9021 and COMP9311 and > 65 WAM",
+        "prereqs": [
+            "AND",
+            {
+                "COMP9311": ""
+            },
+            {
+                "COMP9021": ""
+            }
+        ]
+    },
+    "COMP9418": {
+        "offering_time": "T3",
+        "name": "Advanced Machine Learning",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9418/19T3/outline",
+        "outline": "This course presents an in-depth study of statistical machine learning approaches. It aims to provide the student with a solid understanding of methods for learning and inference in structured probabilistic models, with a healthy balance of theory and practice.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9417.",
+        "prereqs": {
+            "COMP9417": ""
+        }
+    },
+    "COMP9434": {
+        "offering_time": "T3",
+        "name": "Robotic Software Architecture",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP3431/19T3/outline",
+        "outline": "This course gives both a theoretical and a practical introduction to the control of robotic systems. The course is in two parts:An overview of robot software architectures:This part of the course gives students an introduction to the structure of robot software, including the theory of decision making: How can an agent build up knowledge of its world? Having done that, how can an agent choose its actions? A variety of different decision making and planning architectures are covered; including classical planning, reinforcement learning and cognitive architectures. In labs, students will get hands on experience with some of these planning systems.Practical RoboticsThis part of the course gives students a practical introduction to some specific robot architectures; the main system architecture will be the Robot Operating System,ROS. We will be usingTurtleBot3 WaffleRobots, or other robots as available.At the end of this course, students should have:experience with the details of one robot architecture,an overview of a range of other architectures and decision making systems,an understanding of the practicalities of programming physical robots as opposed to purely software systems,an understanding of a robot as a complete system, as well as its component parts.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "70 WAM and COMP9024.",
+        "prereqs": {
+            "COMP9024": ""
+        }
+    },
+    "COMP9444": {
+        "offering_time": "T3",
+        "name": "Neural Networks, Deep Learning",
+        "url": "https://webcms3.cse.unsw.edu.au/COMP9444/19T3/outline",
+        "outline": "This course aims to introduce students to the main topics and methods in the field of neural networks and deep learning, ranging from traditional neural network models to the latest research and applications of deep learning.Topics chosen from: perceptrons, feedforward neural networks, backpropagation, deep convolutional networks for image processing; geometric analysis of trained neural networks; recurrent networks, language processing, semantic analysis, long short term memory; Hopfield networks, restricted Boltzmann machines and autoencoders, generative adversarial networks; deep reinforcement learning; designing successful applications of neural networks; recent developments in neural networks and deep learning.",
+        "grad_level": "postgraduate",
+        "handbook_prereqs": "COMP9024.",
+        "prereqs": {
+            "COMP9024": ""
+        }
+    },
+    "SENG2021": {
+        "offering_time": "T1",
+        "name": "Reqts & Design Workshop",
+        "url": "https://webcms3.cse.unsw.edu.au/static/uploads/course/SENG2021/19T1/2e7a1e5315476d8081cce66370f7c5f9818ebb46b712664aacd0e780bdf64537/SENG2021_outline2019_v1.pdf",
+        "outline": "This course is part the series of software engineering workshops designed to teach students to work\nin teams and apply their knowledge to solve real-life problems. This workshop will offer students the\nopportunity to concentrate on software requirements analysis and design issues including artefacts\nproduced as well techniques and tools to support this process (brainstorming, problem statements,\nrequirements elicitation, producing design documents and prototyping). In addition, it aims to\nprovide students with some of teamwork skills, requirements engineering and design techniques\nthat an engineer would use in the early stages of the development process. The students will also be\ngetting experience on different aspects of designing a Web application with a major focus on the\nfront-end. The requirements for this course will be determined in collaboration with industry\npartners and will relate to developing a realistic application. Most of the teaching will be conducted\nvia mentoring of the teams. At the beginning of the course, some lectures will give background on\nsome key concepts and technologies and on how to produce artefacts in general. The course has a\nnumber of industry sponsors that include Fairfax Media and Macquarie Bank.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "SENG1031 or COMP1531, and enrolment in a BE or BE(Hons) Software Engineering major.",
+        "prereqs": [
+            "OR",
+            {
+                "COMP1531": ""
+            },
+            {
+                "SENG1031": ""
+            }
+        ]
+    },
+    "SENG3011": {
+        "offering_time": "T1",
+        "name": "Software Eng Workshop 3",
+        "url": "https://webcms3.cse.unsw.edu.au/SENG3011/19T1/outline",
+        "outline": "The purpose of the 3rd year software engineering workshop is to give students experience with a group-based large-scale software development project involving a realistic application in a real-life domain (data analytics).In this session, teams will be developing a complex software application and the focus is to learn about a new application domain, study the requirements, manage the project, liaise with the stakeholder and deliver high quality working solutions. Another aspect of the workshop is to reinforce skills in software design, testing, reporting and the use of support tools around these activities.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "SENG2021",
+        "prereqs": {
+            "SENG2021": ""
+        }
+    },
+    "SENG2011": {
+        "offering_time": "T3",
+        "name": "Program Reasoning Workshop",
+        "url": "https://webcms3.cse.unsw.edu.au/SENG2011/19T3/outline",
+        "outline": "",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "MATH1081",
+        "prereqs": {
+            "MATH1081": ""
+        }
+    },
+    "SENG4920": {
+        "offering_time": "T3",
+        "name": "Ethics and Management",
+        "url": "https://www.cse.unsw.edu.au/~cs4920/",
+        "outline": "COMP4920/SENG4920 covers practical aspects of both software project management and professional issues and ethics, and as such is critical preparation for the workforce, in addition to being essential for accreditation of the Software Engineering, Computer Science, Computer Engineering and Bioinformatics degree programmes. Students enrolling should be in the final year of study or nearing completion of their computing degree.\n\nThere are two specific themes and objectives.\n\nSoftware Project Management. To gain practical experience in all phases of the planning and execution of a software project, including requirements scoping, software process methodology, project planning and scheduling, teamwork and communication, and risk and change management.\nProfessional Issues and Ethics. To appreciate the responsibilities of a professional software engineer and understand the ethical dimensions of the IT industry as applied to specific issues such as software quality, privacy and security, intellectual property and legal obligations of IT practitioners.",
+        "grad_level": "undergraduate",
+        "handbook_prereqs": "SENG3011 and completion of 144 UOC in SENGAH",
+        "prereqs": {
+            "SENG3011": ""
+        }
+    }
+}

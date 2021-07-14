@@ -3,7 +3,7 @@ import dagre from 'cytoscape-dagre';
 cytoscape.use(dagre);
 
 import { generateGraphElements, generatePrereqGraphElements } from './graph.js';
-import { getCourseInfo, search, getRelation, logg } from './api.js';
+import { getCourseInfo, search, getRelation, logg, execute_scraper } from './api.js';
 import { showLegend, showCourseInfo, showSearchResults, showCourseRelationship, hideShowSidebar } from './sidebar.js';
 
 function showCourseSimilarity(subcategories, cy) {
@@ -84,7 +84,8 @@ function getCurrGraphName() {
     const edge_weight_threshold = 0;
     const showCourseSimilarityButton = document.getElementById('showSimilarity');
     const showPrereqsButton = document.getElementById('showPrereqs');
-
+    
+    executeEclips.addEventListener('click', execute_scraper)
     toggleSidebar.addEventListener('click', hideShowSidebar)
 
 
