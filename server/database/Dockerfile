@@ -3,10 +3,13 @@
 # FROM postgres:latest
 # COPY *.sql /docker-entrypoint-initdb.d/
 # docker-compose up --build
-#docker exec -t 29ae72100ab4 pg_dumpall -c -U postgres > dump.sql
+#docker exec -t a7c04ed2d067 pg_dumpall -c -U postgres > dump.sql
 ## maybe don't need... but maybe would need if want to run locally someone else
 
-# docker exec -it 312bec8036f6 bash
+# RUN THE FOLLOWING LINES TO ENTER THE POSTGRESQL DATABASE while application is running
+# Get the random string of characters by typing 'docker ps -a' and finding the container ID for the database
+# You can recognise the database container by the name 'cse-curriculum-analysis_db_1'
+# docker exec -it cd7ebc97e962 bash
 # psql -d cse-curriculum-analysis -U postgres
 FROM postgres:latest
 

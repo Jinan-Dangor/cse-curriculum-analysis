@@ -50,6 +50,12 @@ def graph():
     return generate_graph(get_db())
 
 
+@app.route("/admin/execute_eclips_scraper", methods=["POST"])
+def execute_eclips_scraper():
+	body = request.get_json()
+    return "hello\n"
+
+
 @app.route("/prereqs", methods=["GET"])
 def prereqs():
     return api_get_all_prereqs(get_db())

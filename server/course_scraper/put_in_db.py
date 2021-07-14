@@ -2,11 +2,11 @@
 import json
 import psycopg2
 
-COURSE_FILE = "course_scraper/prereqs3.json"
+COURSE_FILE = "prereqs3.json"
 with open(COURSE_FILE) as myf:
     j = json.load(myf)
 
-conn = psycopg2.connect(dbname="postgres", user="postgres", host="127.0.0.1", port=5432, password="abc")
+conn = psycopg2.connect("dbname=cse-curriculum-analysis, user=postgres, host=0.0.0.0, port=5432, password=abc")
 cursor = conn.cursor()
 
 for course in j.keys():

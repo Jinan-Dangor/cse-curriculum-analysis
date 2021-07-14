@@ -6,6 +6,7 @@ services:
       - 5432:5432
     volumes:
       - ./db-data:/var/lib/postgresql/data
+
   # dbrestore:
   #   image: postgres
   #   volumes:
@@ -19,3 +20,4 @@ services:
   #   build: client/
   #   ports:
   #     - ${NGINX_PORT}:80
+  
