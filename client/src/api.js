@@ -3,12 +3,30 @@ const url = 'http://localhost/api';
 //const url = 'http://hri.cse.unsw.edu.au/api';
 
 export function execute_scraper() {
-    console.log("Scraper executing")
     return fetch(url + '/admin/execute_eclips_scraper', {
         method: 'POST'
     }).then(
         resp => {
-            console.log("Executed")
+            return resp.json();
+        }
+    )
+}
+
+export function insertEclipsData() {
+    return fetch(url + '/admin/insert_eclips_data', {
+        method: 'POST'
+    }).then(
+        resp => {
+            return resp.json();
+        }
+    )
+}
+
+export function testDatabaseInsert() {
+    return fetch(url + '/admin/put_in_db', {
+        method: 'POST'
+    }).then(
+        resp => {
             return resp.json();
         }
     )

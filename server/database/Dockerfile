@@ -3,7 +3,7 @@
 # FROM postgres:latest
 # COPY *.sql /docker-entrypoint-initdb.d/
 # docker-compose up --build
-#docker exec -t a7c04ed2d067 pg_dumpall -c -U postgres > dump.sql
+# docker exec -t a7c04ed2d067 pg_dumpall -c -U postgres > dump.sql
 ## maybe don't need... but maybe would need if want to run locally someone else
 
 # RUN THE FOLLOWING LINES TO ENTER THE POSTGRESQL DATABASE while application is running

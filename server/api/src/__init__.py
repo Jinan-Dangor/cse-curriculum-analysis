@@ -15,7 +15,9 @@ from src.routes.search import search_courses
 from src.routes.relationship import get_course_relationship
 from src.routes.vote import like, dislike, unlike, undislike
 from src.eclips_scraper.eclips_scraper import execute_eclips
+from src.eclips_scraper.update_eclips_database import update_eclips_data
 from src.test_database_insert.put_in_db import put_in_database
+
 
 app = Flask(__name__)
 logger = create_logger(app)
@@ -50,6 +52,11 @@ def index():
 @app.route("/graph", methods=["GET"])
 def graph():
     return generate_graph(get_db())
+    
+@app.route("/admin/insert_eclips_data", methods=["POST"])
+def insert_eclips_data():
+    update_eclips_data()
+    return "Test successful\n"
 
 
 @app.route("/admin/execute_eclips_scraper", methods=["POST"])
@@ -59,7 +66,7 @@ def execute_eclips_scraper():
 @app.route("/admin/put_in_db", methods=["POST"])
 def put_in_db():
     put_in_database()
-    return "Potato\n"
+    return "Test successful\n"
 
 
 @app.route("/prereqs", methods=["GET"])
