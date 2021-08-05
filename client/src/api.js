@@ -32,6 +32,46 @@ export function testDatabaseInsert() {
     )
 }
 
+export function parseLectureSlides(lecture_slides, course, lecture) {
+	const formData = new FormData()
+	formData.append('slides', lecture_slides)
+	formData.append('course', course)
+	formData.append('lecture', lecture)
+    return fetch(url + '/admin/parse_lecture_slides', {
+        method: 'POST',
+        body: formData
+    }).then(
+        resp => {
+            return resp.text();
+        }
+    )
+}
+
+export function pollParsedLectureSlides(qid) {
+    return fetch(url + '/admin/poll_parsed_lecture_slides/'+qid, {
+        method: 'GET'
+    }).then(
+        resp => {
+            return resp.text();
+        }
+    )
+}
+
+export function insertParsedLectureSlides(course, lecture, qid) {
+	const formData = new FormData()
+	formData.append('course', course)
+	formData.append('lecture', lecture)
+	formData.append('qid', qid)
+    return fetch(url + '/admin/insert_parsed_lecture_slides', {
+        method: 'POST',
+        body: formData
+    }).then(
+        resp => {
+            return resp.text();
+        }
+    )
+}
+
 export function getGraphData() {
     return fetch(url + '/graph').then(
         resp => {

@@ -3,7 +3,7 @@ import psycopg2
 # docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
 def get_all_courses_lectures_categories(conn):
     res = []
-    query = """select course_code, lecture_num, categories from lectures;"""
+    query = """SELECT course_code, lecture_num, categories FROM lectures WHERE course_code != '';"""
     cursor = conn.cursor()
     cursor.execute(query)
     for record in cursor:
@@ -49,7 +49,7 @@ def get_all_prereqs(conn):
 
 def get_courses_information(conn, courses):
     res = {'postgraduate':[], 'undergraduate':[], 'both':[]}
-    query = """select course_code, course_name, host_url, handbook_summary, grad_level, handbook_prereqs from courses where course_code = ANY(%s);"""
+    query = """select course_code, course_name, host_url, handbook_summary, grad_level, handbook_prereqs, course_id FROM courses WHERE course_code = ANY(%s) AND term = '21T2';"""
     cursor = conn.cursor()
     cursor.execute(query, (courses,))
     for record in cursor: #ideally, put into some model
@@ -60,7 +60,7 @@ def get_courses_information(conn, courses):
 
 
 def get_course_information(conn, course_code):
-    query = """select course_name, host_url, handbook_summary, grad_level, handbook_prereqs from courses where course_code = %s;"""
+    query = """select course_name, host_url, handbook_summary, grad_level, handbook_prereqs, course_id from courses where course_code = %s AND term = '21T2';"""
     cursor = conn.cursor()
     cursor.execute(query, (course_code,))
     row = cursor.fetchone()

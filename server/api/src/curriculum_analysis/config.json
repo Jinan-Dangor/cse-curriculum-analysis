@@ -1,0 +1,67 @@
+{
+    "version": 0.9,
+    "extractor": {
+        "pdf": "pdfminer",
+        "ocr": "tesseract",
+        "language": [
+            "eng"
+        ]
+    },
+    "cleaner": [
+        "out-of-page-removal",
+        "whitespace-removal",
+        "redundancy-detection",
+        "table-detection",
+        [
+            "header-footer-detection",
+            {
+                "maxMarginPercentage": 15
+            }
+        ],
+        [
+            "reading-order-detection",
+            {
+                "minColumnWidthInPagePercent": 15
+            }
+        ],
+        "link-detection",
+        [
+            "words-to-line",
+            {
+                "maximumSpaceBetweenWords": 100
+            }
+        ],
+        "lines-to-paragraph",
+        "ml-heading-detection",
+        "heading-detection",
+        "list-detection",
+        "page-number-detection",
+        "hierarchy-detection",
+        [
+            "regex-matcher",
+            {
+                "queries": [
+                    {
+                        "label": "Course",
+                        "regex": "([A-Z]{4}\\d{4})"
+                    },
+                    {
+                        "label": "Percent",
+                        "regex": "([\\-]?(\\d)+[\\.\\,]*(\\d)*)[ ]*(%|per|percent|pourcent|procent)"
+                    }
+                ]
+            }
+        ]
+    ],
+    "output": {
+        "granularity": "word",
+        "includeMarginals": false,
+        "formats": {
+            "json": true,
+            "text": false,
+            "csv": false,
+            "markdown": false,
+            "pdf": false
+        }
+    }
+}

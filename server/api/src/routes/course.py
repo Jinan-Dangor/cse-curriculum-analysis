@@ -12,10 +12,10 @@ def get_many_course_info(connection, courses):
     return jsonify(db_course_info)
 
 def get_course_info(connection, course):
-    db_course_info =  get_course_information(connection, course)
+    db_course_info = get_course_information(connection, course)
+    keys = ['course_code', 'course_name', 'host_url', 'handbook_summary', 'grad_level', 'handbook_prereqs', 'course_id']
     if db_course_info is None:
-        return Response(f"Course '{course}' does not exist.", status=404)
-    keys = ['course_code', 'course_name', 'host_url', 'handbook_summary', 'grad_level', 'handbook_prereqs']
+        return jsonify(dict(zip(keys, (course,))))
     return jsonify(dict(zip(keys, (course,) + db_course_info)))
     # def post(self):
     #     pass

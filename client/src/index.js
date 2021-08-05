@@ -3,18 +3,33 @@ import dagre from 'cytoscape-dagre';
 cytoscape.use(dagre);
 
 import { generateGraphElements, generatePrereqGraphElements } from './graph.js';
-import { getCourseInfo, search, getRelation, logg, execute_scraper, testDatabaseInsert, insertEclipsData } from './api.js';
+import { getCourseInfo, search, getRelation, logg, execute_scraper, testDatabaseInsert, insertEclipsData,
+         parseLectureSlides, pollParsedLectureSlides, insertParsedLectureSlides } from './api.js';
 import { showLegend, showCourseInfo, showSearchResults, showCourseRelationship, hideShowSidebar } from './sidebar.js';
+
+// TODO Don't do this (async sleep function implemented without async)
+function sleep(ms) {
+    var start = Date.now();
+	for (var i = 0; i < 1e7; i++) {
+		if ((Date.now() - start) > ms){
+			break;
+		}
+	}
+}
 
 function showCourseSimilarity(subcategories, cy) {
     const similarityGraph = document.getElementById('cy-similarity');
     const prereqGraph = document.getElementById('cy-prereqs');
+    const adminPage = document.getElementById('admin-page');
     const courseSimButton = document.getElementById('showSimilarity');
     const coursePrereqsButton = document.getElementById('showPrereqs');
+    const courseAdminButton = document.getElementById('showAdmin');
     coursePrereqsButton.classList.remove('is-info');
     courseSimButton.classList.add('is-info');
+    courseAdminButton.classList.remove('is-info');
     prereqGraph.style.display = "none";
     similarityGraph.style.display = "block";
+    adminPage.style.display = "none";
     showLegend(subcategories, cy);
     currGraph = cy;
     currGraphLegend = subcategories;
@@ -23,15 +38,92 @@ function showCourseSimilarity(subcategories, cy) {
 function showPrereqs(course_legend, cy) {
     const similarityGraph = document.getElementById('cy-similarity');
     const prereqGraph = document.getElementById('cy-prereqs');
+    const adminPage = document.getElementById('admin-page');
     const courseSimButton = document.getElementById('showSimilarity');
     const coursePrereqsButton = document.getElementById('showPrereqs');
+    const courseAdminButton = document.getElementById('showAdmin');
     coursePrereqsButton.classList.add('is-info');
     courseSimButton.classList.remove('is-info');
-    similarityGraph.style.display = "none";
+    courseAdminButton.classList.remove('is-info');
     prereqGraph.style.display = "block";
+    similarityGraph.style.display = "none";
+    adminPage.style.display = "none";
     showLegend(course_legend, cy);
     currGraph = cy;
     currGraphLegend = course_legend;
+}
+
+function showAdmin() {
+	const similarityGraph = document.getElementById('cy-similarity');
+    const prereqGraph = document.getElementById('cy-prereqs');
+    const adminPage = document.getElementById('admin-page');
+    const courseSimButton = document.getElementById('showSimilarity');
+    const coursePrereqsButton = document.getElementById('showPrereqs');
+    const courseAdminButton = document.getElementById('showAdmin');
+    coursePrereqsButton.classList.remove('is-info');
+    courseSimButton.classList.remove('is-info');
+    courseAdminButton.classList.add('is-info');
+    prereqGraph.style.display = "none";
+    similarityGraph.style.display = "none";
+    adminPage.style.display = "block";
+}
+
+function waitForFilesToParse(course, lecture, qid) {
+	let lecture_slides_parsed = false;
+	pollParsedLectureSlides(qid).then(r => {
+		if (r == "201") {
+			lecture_slides_parsed = true;
+			getCourseInfo(course).then(course_info => {
+				insertParsedLectureSlides(course_info['course_id'], lecture, qid).then(r => {
+					confirmCourseUploadSuccess(course_info['course_code'], lecture)
+				})
+			})
+		} else {
+			setTimeout(function() {waitForFilesToParse(course, lecture, qid);}, 20000)
+		}
+	})
+}
+
+function waitUploadFiles(files, i, course) {
+	let lecture_no = i;
+	if (i < files.length) {
+		parseLectureSlides(files[i], course, lecture_no).then(qid => {
+			waitForFilesToParse(course, lecture_no, qid);
+			setTimeout(function() {waitUploadFiles(files, i+1, course);}, 2000)
+		})
+	}
+}
+
+function uploadFiles() {
+	const slideUploadConfirmationText = document.getElementById('slideUploadConfirmationText');
+	const files_to_upload = document.getElementById('lectureSlideUploads');
+	const courseCode = document.getElementById('courseVerifierInput');
+	let files = files_to_upload.files;
+	let course = courseCode.value;
+	slideUploadConfirmationText.innerHTML = "Uploading "+files.length+" lecture slides for "+course+".<br />This may take a minute."+
+	                                        " Confirmation of your uploads will appear below.<br />"
+	waitUploadFiles(files, 0, course);
+}
+
+function verifyCourse() {
+    const courseVerifier = document.getElementById('courseVerifier');
+    const courseVerifierResultText = document.getElementById('verifySlidesResultText');
+    const courseCode = document.getElementById('courseVerifierInput');
+    getCourseInfo(courseCode.value).then(course_info => {
+    	console.log("Verified: "+course_info['course_name']+": "+course_info['course_id'])
+		if (course_info['course_name'] != undefined) {
+			courseVerifierResultText.innerHTML = "You are submitting lecture slides for "+course_info['course_code']+": "+course_info['course_name']+".";
+			courseVerifier.style.display = "block";
+		} else {
+		    courseVerifierResultText.innerHTML = "Course does not exist.";
+		    courseVerifier.style.display = "none";
+		}
+    })
+}
+
+function confirmCourseUploadSuccess(course, lecture_no) {
+	const slideUploadConfirmationText = document.getElementById('slideUploadConfirmationText');
+	slideUploadConfirmationText.innerHTML += "Lecture no."+lecture_no+" from "+course+" successfully uploaded.<br />";
 }
 
 function OrNodeOrNot(a, b) {
@@ -84,11 +176,17 @@ function getCurrGraphName() {
     const edge_weight_threshold = 0;
     const showCourseSimilarityButton = document.getElementById('showSimilarity');
     const showPrereqsButton = document.getElementById('showPrereqs');
+    const showAdminButton = document.getElementById('showAdmin');
+    const fileUploadButton = document.getElementById('uploadSlides');
+    const testButton = document.getElementById('test');
+    const verifyButton = document.getElementById('verifySlidesButton');
     
-    insertEclipsDataButton.addEventListener('click', insertEclipsData)
-    testChangeDatabase.addEventListener('click', testDatabaseInsert)
-    executeEclips.addEventListener('click', execute_scraper)
-    toggleSidebar.addEventListener('click', hideShowSidebar)
+    insertEclipsDataButton.addEventListener('click', insertEclipsData);
+    executeEclips.addEventListener('click', execute_scraper);
+    toggleSidebar.addEventListener('click', hideShowSidebar);
+    testButton.addEventListener('click', testDatabaseInsert);
+    fileUploadButton.addEventListener('click', uploadFiles);
+    verifyButton.addEventListener('click', verifyCourse);
 
 
     const displayEdgeInfoSidebar = edge => {
@@ -328,14 +426,17 @@ function getCurrGraphName() {
             }
 
         });
-
         showCourseSimilarityButton.addEventListener('click', _ => {
-            logg("Clicked on course similarity button");
-            showCourseSimilarity(subcategories_colours, similarityGraph);
-        }, false);
-        showPrereqsButton.addEventListener('click', _ => {
-            logg("Clicked on prereq graph button");
-            showPrereqs(course_level_colours, prereqsGraph);
-        }, false);
+		    logg("Clicked on course similarity button");
+		    showCourseSimilarity(subcategories_colours, similarityGraph);
+		}, false);
+		showPrereqsButton.addEventListener('click', _ => {
+		    logg("Clicked on prereq graph button");
+		    showPrereqs(course_level_colours, prereqsGraph);
+		}, false);
+		showAdminButton.addEventListener('click', _ => {
+		    logg("Clicked on admin button");
+		    showAdmin();
+		}, false);
     })
 })()

@@ -21,11 +21,14 @@
         </div>
         <div style="display:flex; flex-direction: row;">
             <button id="showSimilarity" class="button is-info is-small" style="margin-top: 10px; margin-bottom: 10px; margin-right: 20px;" href="/">
-                    Show course similarity
-                </button>
+                Show course similarity
+            </button>
             <button id="showPrereqs" class="button is-small" style="margin-top: 10px;margin-bottom: 10px; margin-right: 20px;" href="/">
-                    Show prerequisite graph
-                </button>
+                Show prerequisite graph
+            </button>
+            <button id="showAdmin" class="button is-small" style="margin-top: 10px;margin-bottom: 10px; margin-right: 20px;" href="/">
+                Show Admin
+            </button>
             <div class="control">
                 <input id="graphSearch" class="input is-small" type="text" style="margin-top: 10px;margin-bottom: 10px; margin-right: 20px;" placeholder="Search">
             </div>
@@ -41,6 +44,11 @@
             </button>
         </div>
         <div style="display:flex; flex-direction: row; margin-left: auto;">
+            <button id="test" class="button is-light is-small" style="margin-top: 10px; margin-bottom: 10px; margin-right: 20px;" href="/">
+                    Test
+            </button>
+        </div>
+        <div style="display:flex; flex-direction: row; margin-left: auto;">
             <button id="toggleSidebar" class="button is-light is-small" style="margin-top: 10px; margin-bottom: 10px; margin-right: 20px;" href="/">
                     Toggle Sidebar
             </button>
@@ -51,6 +59,20 @@
 
             <div id="cy-similarity" style="display:block"></div>
             <div id="cy-prereqs" style="display:block"></div>
+            <div id="admin-page" style="display:block">
+            	<p>Enter course code: <input type="text" id="courseVerifierInput" name="course-verifier-input"></p>
+            	<button id="verifySlidesButton" class="button is-light is-small" style="margin-top: 10px; margin-bottom: 10px; margin-right: 20px;" href="/">
+	                Verify
+	        	</button>
+	        	<p id="verifySlidesResultText"></p>
+            	<div id="courseVerifier" style="display:none">
+					<p>Upload Lecture Slides: <input type = "file" name = "lecture_slide_uploads" id="lectureSlideUploads" multiple/></p>
+					<button id="uploadSlides" class="button is-light is-small" style="margin-top: 10px; margin-bottom: 10px; margin-right: 20px;" href="/">
+		                Upload
+		        	</button>
+		        	<p id="slideUploadConfirmationText"></p>
+            	</div>
+            </div>
 
         </div>
         <div id="sidebar" style="display:flex; background-color: white; padding-left: 5px;padding-right: 5px;  border-left: 1px solid rgb(34, 34, 34);  flex-direction: column; flex-basis: 100%; z-index: 2; flex: 1;">

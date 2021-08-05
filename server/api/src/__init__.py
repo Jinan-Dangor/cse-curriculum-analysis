@@ -17,7 +17,9 @@ from src.routes.vote import like, dislike, unlike, undislike
 from src.eclips_scraper.eclips_scraper import execute_eclips
 from src.eclips_scraper.update_eclips_database import update_eclips_data
 from src.test_database_insert.put_in_db import put_in_database
-
+from src.curriculum_analysis.main import parse_lecture_slide, poll_whether_slides_parsed, insert_lecture_slide
+import os
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 logger = create_logger(app)
@@ -57,15 +59,44 @@ def graph():
 def insert_eclips_data():
     update_eclips_data()
     return "Test successful\n"
+    
+@app.route("/admin/parse_lecture_slides", methods=["POST"])
+def parse_lecture_slides():
+	# Save file locally
+	lecture_file = request.files['slides']
+	filename = secure_filename(lecture_file.filename)
+	upload_folder = "uploads"
+	upload_dir = os.path.join("/usr/src/app/src/curriculum_analysis", upload_folder)
+	os.makedirs(upload_dir, exist_ok=True)
+	file_dest = os.path.join(upload_dir, filename)
+	lecture_file.save(file_dest)
+	
+	# Parse file
+	course_name = request.form.get('course')
+	lecture_no = request.form.get('lecture')
+	qID = parse_lecture_slide(file_dest, course_name, lecture_no)
+	
+	# Delete file TODO
+	
+	return qID
 
+@app.route("/admin/poll_parsed_lecture_slides/<string:qid>", methods=["GET"])
+def poll_parsed_lecture_slides(qid):
+	return str(poll_whether_slides_parsed(qid))
+
+@app.route("/admin/insert_parsed_lecture_slides", methods=["POST"])
+def insert_parsed_lecture_slides():
+	insert_lecture_slide(request.form.get('course'), request.form.get('lecture'), request.form.get('qid'))
+	return "Insert successful\n"
 
 @app.route("/admin/execute_eclips_scraper", methods=["POST"])
 def execute_eclips_scraper():
     return execute_eclips("", "")
     
+# Test function
 @app.route("/admin/put_in_db", methods=["POST"])
 def put_in_db():
-    put_in_database()
+    #put_in_database()
     return "Test successful\n"
 
 
