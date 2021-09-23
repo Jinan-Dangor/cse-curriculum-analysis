@@ -14,6 +14,6 @@ COPY api/bin/entrypoint.sh ./
 COPY api/*.py ./
 COPY api/src ./src
 
-# CMD [ "pipenv", "run", "gunicorn", "--bind", "0.0.0.0:8000", "manage:app" 
+# CMD [ "pipenv", "run", "gunicorn", "--bind", "0.0.0.0:8000", "manage:app" ]
 
 ENTRYPOINT [ "/usr/src/app/entrypoint.sh" ]

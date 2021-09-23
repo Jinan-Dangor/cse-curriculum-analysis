@@ -25,9 +25,6 @@ def course_is_administrative(course):
 	else:
 		return False
 
-def potato():
-	return "Potato\n"
-
 def execute_eclips(login_email, login_password):
 	#PATH = "/usr/src/app/src/eclips_scraper/chromedriver"
 	#driver = webdriver.Chrome(PATH)
@@ -254,6 +251,69 @@ def execute_eclips(login_email, login_password):
 	print("Done, will close in 30 seconds")
 	time.sleep(30)
 	driver.quit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

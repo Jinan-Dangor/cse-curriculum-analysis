@@ -1,6 +1,8 @@
 import cytoscape from 'cytoscape';
 import dagre from 'cytoscape-dagre';
-cytoscape.use(dagre);
+import fcose from 'cytoscape-fcose';
+//cytoscape.use(dagre);
+cytoscape.use(fcose);
 
 import { generateGraphElements, generatePrereqGraphElements } from './graph.js';
 import { getCourseInfo, search, getRelation, logg, execute_scraper, testDatabaseInsert, insertEclipsData,
@@ -341,7 +343,8 @@ function getCurrGraphName() {
                 }
             ],
             layout: {
-                name: 'breadthfirst'
+                name: 'fcose',
+                relativePlacementConstraint: [{top: 'COMP1511', bottom: 'COMP2521'}]
             }
         });
         prereqsGraph._private.data['name'] = 'prerequisites';
