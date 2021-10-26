@@ -81,7 +81,8 @@ function buildNode(id, or_node = false) {
     return {
         data: {
             id: id,
-            or_node: or_node
+            or_node: or_node,
+            level: 0
         }
     }
 }
@@ -135,16 +136,58 @@ function parsePrereqs(main_course, handbook_prereqs, prereqs) {
     }
 }
 
+//TODO: Make work when two things on the same level are prerequisities (whether they progress to the next level depends on order?)
+// This might be some other problem, theoretically I don't think it makes sense
+function setLevel(elements, num_nodes) {
+	let num_edges = elements.length-num_nodes;
+	for (let i = 0; i < num_nodes; i++) {
+		if (elements[i].data.is_root) {
+			elements[i].data.level = 0;
+		}
+	}
+	let current_level = 1;
+	let change_made = true;
+	while (change_made) {
+		change_made = false;
+		for (let i = 0; i < elements.length; i++) {
+			if ((elements[i].data.is_course && elements[i].data.level == current_level-1) ||
+			    (elements[i].data.or_node   && elements[i].data.level == current_level-2)) {
+				for (let j = num_nodes; j < num_nodes+num_edges; j++) {
+					if (elements[j].data.source == elements[i].data.id) {
+						for (let k = 0; k < num_nodes; k++) {
+							if (elements[k].data.id == elements[j].data.target) {
+								if (elements[k].data.or_node) {
+									elements[k].data.level = Math.max(current_level-1, elements[k].data.level);
+								} else {
+									elements[k].data.level = Math.max(current_level,   elements[k].data.level);
+								}
+								change_made = true;
+							}
+						}
+					}
+				}
+			}
+		}
+		current_level++;
+	}
+	return elements;
+}
+
 export function generatePrereqGraphElements() {
     return getPrereqs().then(graph_data => {
         const courses = Object.keys(graph_data);
         let elements = courses.map(course_name => {
             return {
                 data: {
-                    id: course_name
+                    id: course_name,
+                    is_course: true,
+                    is_root: Object.keys(graph_data[course_name]['prereqs'] ? graph_data[course_name]['prereqs'] : {}).length === 0,
+                    is_leaf: true,
+                    level: -1
                 }
             }
         });
+        const num_nodes = elements.length;
         courses.forEach(course => {
             const handbook_prereqs = graph_data[course]['handbook_prereqs'];
             const prereqs = graph_data[course]['prereqs'] ? graph_data[course]['prereqs'] : {};
@@ -152,9 +195,21 @@ export function generatePrereqGraphElements() {
             if (Object.keys(prereqs).length === 0) {
                 return;
             }
+            
+            const parsedPrereqs = parsePrereqs(course, handbook_prereqs, prereqs);
 
-            elements = [...elements, ...parsePrereqs(course, handbook_prereqs, prereqs)];
+            elements = [...elements, ...parsedPrereqs];
+            
+            for (let i = 0; i < parsedPrereqs.length; i++) {
+            	for (let j = 0; j < num_nodes; j++) {
+            		if (!parsedPrereqs[i].data.or_node && parsedPrereqs[i].data.source == elements[j].data.id) {
+		        		elements[j].data.is_leaf = false;
+		        		break;
+		        	}
+            	}
+            	
+            }
         });
-        return elements;
+        return setLevel(elements, num_nodes);
     })
 }

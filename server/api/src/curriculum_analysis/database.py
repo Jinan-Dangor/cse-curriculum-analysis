@@ -8,6 +8,103 @@ conn = psycopg2.connect(
 	"dbname=cse-curriculum-analysis user=postgres host=db port=5432 password=abc"
 )
 
+def array_to_sql_string(array):
+    string = "'{"
+    for a in array:
+        string += a + ", "
+    string += "}'"
+    return string
+
+def clear_assumed_knowledge(course_id):
+    query = """DELETE FROM assumed_knowledge
+    WHERE course_id=%s;"""
+    cursor = conn.cursor()
+    cursor.execute(query, [course_id])
+    conn.commit()
+    cursor.close()
+
+def insert_assumed_knowledge_keywords(course_id, new_keywords):
+    # Get pre-existing assumed knowledge
+    query = """SELECT keywords FROM assumed_knowledge
+    WHERE course_id=%s;"""
+    cursor = conn.cursor()
+    cursor.execute(query, [course_id])
+    old_keywords = cursor.fetchone()
+    cursor.close()
+    
+    if (old_keywords == None):
+        query = """INSERT INTO assumed_knowledge (course_id, keywords) VALUES (%s, """+"""'{"""+new_keywords+"""}'"""+""");"""
+        cursor = conn.cursor()
+        cursor.execute(query, [course_id])
+        #cursor.execute(query, [course_id, "{potato, pie}"])
+        #cursor.execute(query, [course_id])
+        cursor.close()
+        
+        conn.commit()
+        return "New insert"
+    
+    combined_keywords = "'{" + new_keywords
+    if (','.join(old_keywords[0]) != ""):
+        combined_keywords += "," + ','.join(old_keywords[0])
+    combined_keywords += "}'"
+	
+    # Insert merged list
+    query = """UPDATE assumed_knowledge SET keywords=""" + combined_keywords + """WHERE course_id=""" + course_id + """;"""
+    cursor = conn.cursor()
+    cursor.execute(query)
+    cursor.close()
+    
+    conn.commit()
+    return "Merged insert"
+
+def get_assumed_knowledge_keywords(course_id):
+    query = """SELECT keywords FROM assumed_knowledge
+    WHERE course_id=%s;"""
+    cursor = conn.cursor()
+    cursor.execute(query, [course_id])
+    keywords = cursor.fetchone()
+    cursor.close()
+    
+    if (keywords == None):
+        return ""
+    
+    return ','.join(keywords[0])
+
+def get_all_lectures_keywords():
+    query = """SELECT keywords FROM lectures;"""
+    cursor = conn.cursor()
+    cursor.execute(query)
+    keywords = cursor.fetchall()
+    cursor.close()
+    
+    #return ','.join(keywords[0][0]) + "," + ','.join(keywords[1][0])
+    
+    combined_keywords = ""
+    
+    for new_keywords in keywords:
+        #combined_keywords = combined_keywords + (list(set(new_keywords) - set(combined_keywords)))
+        if not (new_keywords[0] == None):
+            combined_keywords = combined_keywords + "," + ','.join(new_keywords[0])
+    
+    return combined_keywords
+
+# Note: Does NOT delete duplicates
+def get_course_lecture_keywords(course_id):
+    query = """SELECT keywords FROM lectures WHERE course_id=""" + course_id + """;"""
+    cursor = conn.cursor()
+    cursor.execute(query)
+    keywords = cursor.fetchall()
+    cursor.close()
+    
+    combined_keywords = ""
+    
+    for new_keywords in keywords:
+        if not (new_keywords[0] == None):
+            combined_keywords = combined_keywords + "," + ','.join(new_keywords[0])
+    
+    return combined_keywords
+	
+
 def put_in_db(course, lecture, keywords, wp_pages, categories):
     query = """update lectures set keywords=%s, wp_pages=%s, categories=%s
     where course_code=%s and lecture_num=%s;"""

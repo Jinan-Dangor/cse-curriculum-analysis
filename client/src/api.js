@@ -32,6 +32,20 @@ export function testDatabaseInsert() {
     )
 }
 
+export function insertAssumedKnowledge(course_id, assumed_knowledge) {
+	const formData = new FormData()
+	formData.append('course_id', course_id)
+	formData.append('assumed_knowledge', assumed_knowledge)
+    return fetch(url + '/admin/insert_assumed_knowledge', {
+        method: 'POST',
+        body: formData
+    }).then(
+        resp => {
+            return resp.text();
+        }
+    )
+}
+
 export function parseLectureSlides(lecture_slides, course, lecture) {
 	const formData = new FormData()
 	formData.append('slides', lecture_slides)
@@ -72,6 +86,55 @@ export function insertParsedLectureSlides(course, lecture, qid) {
     )
 }
 
+export function sendEmail(address, subject, body) {
+	const formData = new FormData()
+	formData.append('address', address)
+	formData.append('subject', subject)
+	formData.append('body', body)
+    return fetch(url + '/admin/send_email', {
+        method: 'POST',
+        body: formData
+    }).then(
+        resp => {
+            return resp.text();
+        }
+    )
+}
+
+export function getAssumedKnowledgeKeywords(course_id) {
+	const formData = new FormData()
+	formData.append('course_id', course_id)
+	return fetch(url + '/admin/get_assumed_knowledge', {
+        method: 'POST',
+        body: formData
+    }).then(
+        resp => {
+            return resp.text();
+        }
+    )
+}
+
+export function getAllLectureKeywords() {
+    return fetch(url + '/admin/all_lecture_keywords').then(
+        resp => {
+            return resp.text();
+        }
+    )
+}
+
+export function clearAssumedKnowledge(course_id) {
+    const formData = new FormData()
+	formData.append('course_id', course_id)
+	return fetch(url + '/admin/clear_assumed_knowledge_keywords', {
+        method: 'POST',
+        body: formData
+    }).then(
+        resp => {
+            return resp.text();
+        }
+    )
+}
+
 export function getGraphData() {
     return fetch(url + '/graph').then(
         resp => {
@@ -92,6 +155,14 @@ export function getCourseInfo(course_code) {
     return fetch(url + '/course/' + course_code).then(
         resp => {
             return resp.json();
+        }
+    )
+}
+
+export function getCourseLectureKeywords(course_code) {
+    return fetch(url + '/course/lecture_keywords/' + course_code).then(
+        resp => {
+            return resp.text();
         }
     )
 }

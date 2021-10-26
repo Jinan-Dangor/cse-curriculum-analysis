@@ -18,10 +18,25 @@ from src.eclips_scraper.eclips_scraper import execute_eclips
 from src.eclips_scraper.update_eclips_database import update_eclips_data
 from src.test_database_insert.put_in_db import put_in_database
 from src.curriculum_analysis.main import parse_lecture_slide, poll_whether_slides_parsed, insert_lecture_slide
+from src.curriculum_analysis.database import insert_assumed_knowledge_keywords, get_assumed_knowledge_keywords, get_all_lectures_keywords, clear_assumed_knowledge, get_course_lecture_keywords
 import os
 from werkzeug.utils import secure_filename
 
+from flask_mail import Mail, Message
+
 app = Flask(__name__)
+
+app.config.update(dict(
+    DEBUG = False,
+    MAIL_SERVER = 'smtp.gmail.com',
+    MAIL_PORT = 587,
+    MAIL_USE_TLS = True,
+    MAIL_USE_SSL = False,
+    MAIL_USERNAME = 'andrew@trouty.com',
+    MAIL_PASSWORD = "myactualemailpassword",
+))
+mail = Mail(app)
+
 logger = create_logger(app)
 logger.setLevel(logging.INFO)  # Set debugging
 # Access-Control-Allow-Origin header
@@ -59,6 +74,15 @@ def graph():
 def insert_eclips_data():
     update_eclips_data()
     return "Test successful\n"
+
+@app.route("/admin/insert_assumed_knowledge", methods=["POST"])
+def insert_assumed_knowledge():
+	course_id = request.form.get('course_id')
+	assumed_knowledge = request.form.get('assumed_knowledge')
+	if (assumed_knowledge == ""):
+		return "Nothing inserted"
+	
+	return insert_assumed_knowledge_keywords(course_id, assumed_knowledge)
     
 @app.route("/admin/parse_lecture_slides", methods=["POST"])
 def parse_lecture_slides():
@@ -89,6 +113,15 @@ def insert_parsed_lecture_slides():
 	insert_lecture_slide(request.form.get('course'), request.form.get('lecture'), request.form.get('qid'))
 	return "Insert successful\n"
 
+@app.route("/admin/send_email", methods=["POST"])
+def send_email():
+	addr = request.form.get('address')
+	subj = request.form.get('subject')
+	body = request.form.get('body')
+	msg = Message(body=body, subject=subj, sender="very_real@unsw.com", recipients=[addr])
+	mail.send(msg)
+	return "Email sent\n"
+
 @app.route("/admin/execute_eclips_scraper", methods=["POST"])
 def execute_eclips_scraper():
     return execute_eclips("", "")
@@ -98,7 +131,19 @@ def execute_eclips_scraper():
 def put_in_db():
     #put_in_database()
     return "Test successful\n"
+    
+@app.route("/admin/get_assumed_knowledge", methods=["POST"])
+def get_assumed_knowledge():
+	return get_assumed_knowledge_keywords(request.form.get('course_id'))
+	
+@app.route("/admin/all_lecture_keywords", methods=["GET"])
+def all_lecture_keywords():
+	return get_all_lectures_keywords()
 
+@app.route("/admin/clear_assumed_knowledge_keywords", methods=["POST"])
+def clear_assumed_knowledge_keywords():
+	clear_assumed_knowledge(request.form.get('course_id'))
+	return "Assumed Knowledge Cleared\n"
 
 @app.route("/prereqs", methods=["GET"])
 def prereqs():
@@ -117,6 +162,11 @@ def api_courses():
 @app.route("/course/<string:course>", methods=["GET"])
 def api_course(course):
     return get_course_info(get_db(), course)
+
+
+@app.route("/course/lecture_keywords/<string:course>", methods=["GET"])
+def api_course_lecture_keywords(course):
+    return get_course_lecture_keywords(course)
 
 
 @app.route("/search", methods=["GET"])

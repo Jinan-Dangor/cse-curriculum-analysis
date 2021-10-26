@@ -7,9 +7,7 @@
 ## maybe don't need... but maybe would need if want to run locally someone else
 
 # RUN THE FOLLOWING LINES TO ENTER THE POSTGRESQL DATABASE while application is running
-# Get the random string of characters by typing 'docker ps -a' and finding the container ID for the database
-# You can recognise the database container by the name 'cse-curriculum-analysis_db_1'
-# docker exec -it cse-curriculum-analysis_api_1 bash
+# docker exec -it cse-curriculum-analysis_db_1 bash
 # psql -d cse-curriculum-analysis -U postgres
 FROM postgres:latest
 

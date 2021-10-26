@@ -6,10 +6,10 @@ cytoscape.use(fcose);
 
 import { generateGraphElements, generatePrereqGraphElements } from './graph.js';
 import { getCourseInfo, search, getRelation, logg, execute_scraper, testDatabaseInsert, insertEclipsData,
-         parseLectureSlides, pollParsedLectureSlides, insertParsedLectureSlides } from './api.js';
+         parseLectureSlides, pollParsedLectureSlides, insertParsedLectureSlides, sendEmail } from './api.js';
 import { showLegend, showCourseInfo, showSearchResults, showCourseRelationship, hideShowSidebar } from './sidebar.js';
 
-// TODO Don't do this (async sleep function implemented without async)
+// TODO Don't do this (this is an async sleep function implemented without async)
 function sleep(ms) {
     var start = Date.now();
 	for (var i = 0; i < 1e7; i++) {
@@ -146,6 +146,9 @@ function highlightCourse(courseNode, cy) {
     })
 }
 
+function sendTestEmail() {
+	sendEmail("andrew@trouty.com", "It worked!", "Yeet yeet");
+}
 
 
 var currGraph;
@@ -180,15 +183,16 @@ function getCurrGraphName() {
     const showPrereqsButton = document.getElementById('showPrereqs');
     const showAdminButton = document.getElementById('showAdmin');
     const fileUploadButton = document.getElementById('uploadSlides');
-    const testButton = document.getElementById('test');
     const verifyButton = document.getElementById('verifySlidesButton');
+    const emailButton = document.getElementById('sendEmail');
     
-    insertEclipsDataButton.addEventListener('click', insertEclipsData);
-    executeEclips.addEventListener('click', execute_scraper);
+    // To re-enable any commented-out buttons, uncomment them here and in index.html
+    //insertEclipsDataButton.addEventListener('click', insertEclipsData);
+    //executeEclips.addEventListener('click', execute_scraper);
     toggleSidebar.addEventListener('click', hideShowSidebar);
-    testButton.addEventListener('click', testDatabaseInsert);
     fileUploadButton.addEventListener('click', uploadFiles);
     verifyButton.addEventListener('click', verifyCourse);
+    //emailButton.addEventListener('click', sendTestEmail);
 
 
     const displayEdgeInfoSidebar = edge => {
@@ -281,6 +285,31 @@ function getCurrGraphName() {
         similarityGraph.edges().filter((e) => {
             return e.width() * 10 < 25;
         }).style('display', 'none');
+        
+        // Get a list of all roots of the prereq graph
+        let prereq_elements = graphs_elements[1];
+        let prereq_roots = [];
+        let prereq_singles = [];
+        let prereq_levels = [[], [], [], [], [], [], [], []];
+        for (let i = 0; i < prereq_elements.length; i++) {
+    		if (prereq_elements[i].data.is_root && prereq_elements[i].data.is_leaf) {
+    			prereq_singles.push(prereq_elements[i].data.id);
+    		} else if (prereq_elements[i].data.is_course) {
+    			//prereq_levels[0].push(prereq_elements[i].data.id);
+    			prereq_levels[prereq_elements[i].data.level].push(prereq_elements[i].data.id);
+    		}
+        }
+        for (let i = 0; i < prereq_levels.length; i++) {
+        	if (prereq_levels[i].length <= 1) {
+        		prereq_levels.splice(i, 1);
+        		i--;
+        	}
+        }
+        let level_separators = [{top: prereq_singles[0], bottom: prereq_levels[0][0], gap: 200}];
+        for (let i = 0; i < prereq_levels.length-1; i++) {
+        	level_separators.push({top: prereq_levels[i][0], bottom: prereq_levels[i+1][0], gap: 200});
+        }
+        
 
         const prereqsGraph = cytoscape({
             container: document.getElementById('cy-prereqs'),
@@ -344,7 +373,9 @@ function getCurrGraphName() {
             ],
             layout: {
                 name: 'fcose',
-                relativePlacementConstraint: [{top: 'COMP1511', bottom: 'COMP2521'}]
+                nodeSeparation: 75,
+                alignmentConstraint: {horizontal: [...prereq_levels, prereq_singles]},
+                relativePlacementConstraint: level_separators
             }
         });
         prereqsGraph._private.data['name'] = 'prerequisites';
@@ -353,6 +384,7 @@ function getCurrGraphName() {
         prereqsGraph.on('mouseover', 'node', function(e) {
             highlightCourse(e.target, prereqsGraph);
             logg(`Highlighted course prerequisites.`);
+            // You can set the border-color and width to something meaningful here
             e.target.predecessors().animate({
                 style: {
                     lineColor: 'red',
