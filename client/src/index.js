@@ -6,7 +6,7 @@ cytoscape.use(fcose);
 
 import { generateGraphElements, generatePrereqGraphElements } from './graph.js';
 import { getCourseInfo, search, getRelation, logg, execute_scraper, testDatabaseInsert, insertEclipsData,
-         parseLectureSlides, pollParsedLectureSlides, insertParsedLectureSlides, sendEmail } from './api.js';
+         parseLectureSlides, pollParsedLectureSlides, insertParsedLectureSlides, sendEmail, getCourseLectureKeywords, getAssumedKnowledgeKeywords } from './api.js';
 import { showLegend, showCourseInfo, showSearchResults, showCourseRelationship, hideShowSidebar } from './sidebar.js';
 
 // TODO Don't do this (this is an async sleep function implemented without async)
@@ -371,9 +371,9 @@ function getCurrGraphName() {
                     }
                 }
             ],
+            
             layout: {
                 name: 'fcose',
-                nodeSeparation: 75,
                 alignmentConstraint: {horizontal: [...prereq_levels, prereq_singles]},
                 relativePlacementConstraint: level_separators
             }
@@ -384,16 +384,124 @@ function getCurrGraphName() {
         prereqsGraph.on('mouseover', 'node', function(e) {
             highlightCourse(e.target, prereqsGraph);
             logg(`Highlighted course prerequisites.`);
+            
             // You can set the border-color and width to something meaningful here
-            e.target.predecessors().animate({
+            let exampleOneKnowledge = ["COMP1511", "COMP3601"];
+            
+            let assumedKnowledge = ["architecture", "concurrency", "processing"];
+            let nodeKnowledge = {
+            	'COMP1511': ["programming", "c", "memory"],
+            	'COMP1911': ["programming", "c", "memory"],
+            	'COMP1521': ["programming", "processing"],
+            	'COMP2121': ["architecture", "processing"],
+            	'COMP3222': ["concurrency"],
+            	'COMP3211': ["programming"],
+            	'COMP3601': ["concurrency"]
+            };
+            let edgeKnowledge = {};
+            let edgeColours = {};
+            var colourEdgeWarning = function(edge) {
+            	if (edge.source() == prereqsGraph.$id('COMP1511')
+            	 || edge.target() == prereqsGraph.$id('COMP1511')) {
+            		edgeColours[edge.id()] = 'green';
+            		return 'green';
+            	}
+            	if (edge.source() == prereqsGraph.$id('COMP3601')
+            	 || edge.target() == prereqsGraph.$id('COMP3601')) {
+            		edgeColours[edge.id()] = 'green';
+            		return 'green';
+            	}
+            	if (edge.source() == prereqsGraph.$id('COMP2121')
+            	 || edge.target() == prereqsGraph.$id('COMP2121')) {
+            		edgeColours[edge.id()] = 'green';
+            		return 'green';
+            	}
+            	if (edge.source() == prereqsGraph.$id('COMP2121or')
+            	 || edge.target() == prereqsGraph.$id('COMP2121or')) {
+            		edgeColours[edge.id()] = 'green';
+            		return 'green';
+            	}
+            	const preds = edge.source().incomers();
+            	if (preds.length == 0) {
+            		edgeColours[edge.id()] = 'red';
+            		return 'red';
+            	}
+            	for (const pred of preds) {
+            		if (pred.isEdge() && colourEdgeWarning(pred) == 'red') {
+            			edgeColours[edge.id()] = 'red';
+            			return 'red';
+            		}
+            	}
+            	edgeColours[edge.id()] = 'green';
+                return 'green';
+            }
+            let prepDone = false;
+            var colourEdgeWarningPrep = function(bottom_node, edge) {
+            	if (prepDone) {
+            		return colourEdgeWarning(edge);
+            	}
+            	// Prep node knowledge (earlier API calls)
+            	
+            	// Prep path knowledge
+            	// Start path knowledge as combined knowledge of either side
+            	bottom_node.predecessors().forEach((edge) => {
+            		if (edge.isEdge()) {
+            			edgeKnowledge[edge.id()] = new Set();
+            			if (nodeKnowledge[edge.source().id()] != null) {
+            				for (const a of nodeKnowledge[edge.source().id()]) {
+            					edgeKnowledge[edge.id()].add(a);
+            				}
+            			}
+            			if (nodeKnowledge[edge.target().id()] != null) {
+            				for (const a of nodeKnowledge[edge.target().id()]) {
+            					edgeKnowledge[edge.id()].add(a);
+            				}
+            			}
+            		}
+            	});
+            	// Progress down (loop through nodes)
+            	/*let has_changed = true;
+            	while (has_changed) {
+            		has_changed = false;
+		        	bottom_node.predecessors().forEach((node) => {
+		        		if (node.isNode() && node.incomers().length > 0 && node.outgoers().length > 0) {
+		        			let incoming_knowledge = new Set();
+		        			let first = true;
+		        			for (const i of node.incomers()) {
+		        				if (i.isEdge()) {
+		        					if (first) {
+		        						incoming_knowledge = new Set(edgeKnowledge[i.id()]);
+		        					} else {
+		        						incoming_knowledge = new Set([...incoming_knowledge].filter(x => edgeKnowledge[i.id()].has(x)));
+		        					}
+		        					first = false;
+		        				}
+		        			}
+		        			for (const o of node.outgoers()) {
+		        				if (o.isEdge()) {
+		        					let old_size = edgeKnowledge[o.id()].size;
+		        					edgeKnowledge[o.id()] = new Set([...edgeKnowledge[o.id()], ...incoming_knowledge]);
+		        					if (old_size != edgeKnowledge[o.id()].size) {
+		        						has_changed = true;
+		        					}
+		        				}
+		        			}
+		        		}
+		        	});
+            	}*/
+            	// Progress up
+            	
+            	prepDone = true;
+            	return colourEdgeWarningPrep(bottom_node, edge);
+            }
+            e.target.predecessors().forEach((edge) => {edge.animate({
                 style: {
-                    lineColor: 'red',
+                    'line-color': colourEdgeWarningPrep(e.target, edge),
                     'target-arrow-color': 'red',
                     'border-color': 'brown',
                     'border-width': '5px'
                 },
-
-            });
+            })});
         });
         prereqsGraph.on('mouseout', 'node', function(e) {
             var sel = e.target;

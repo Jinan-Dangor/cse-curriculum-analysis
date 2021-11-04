@@ -526,7 +526,11 @@ export function showFilteringOptions(currGraph) {
             });
         })
     })
-    ul.childNodes[ul.childNodes.length - 1].querySelector('input').checked = true;
+    // Select 'both' by default
+    //ul.childNodes[ul.childNodes.length - 1].querySelector('input').checked = true;
+    // Select 'undergraduate' by default
+    ul.childNodes[0].querySelector('input').click();
+    
     div.appendChild(radioDiv)
     const divRB = document.createElement('div');
     divRB.classList.add('buttons', 'is-centered');
