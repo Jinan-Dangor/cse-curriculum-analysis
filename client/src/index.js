@@ -374,8 +374,8 @@ function getCurrGraphName() {
             
             layout: {
                 name: 'fcose',
-                alignmentConstraint: {horizontal: [...prereq_levels, prereq_singles]},
-                relativePlacementConstraint: level_separators
+                //alignmentConstraint: {horizontal: [...prereq_levels, prereq_singles]},
+                //relativePlacementConstraint: level_separators
             }
         });
         prereqsGraph._private.data['name'] = 'prerequisites';
